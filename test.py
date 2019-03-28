@@ -33,7 +33,7 @@ categories = ['airplane', 'alarm clock', 'ambulance', 'angel', 'animal migration
 # sess = tf.InteractiveSession()
 
 BASE_SIZE = 256
-NCSVS = 100
+# NCSVS = 100
 NCATS = 340
 np.random.seed(seed=1987)
 tf.set_random_seed(seed=1987)
@@ -45,15 +45,6 @@ STEPS = 800
 EPOCHS = 16
 size = 64
 batchsize = 680
-
-def load_model():
-    global model, graph
-    model = MobileNet(input_shape=(size, size, 1), alpha=1., weights=None, classes=NCATS)
-    model.load_weights("./model/model.h5")
-    model.compile(optimizer=Adam(lr=0.002), loss='categorical_crossentropy',
-                  metrics=[categorical_crossentropy, categorical_accuracy, top_3_accuracy])
-    # graph = tf.get_default_graph()
-    print(model.summary())
 
 # sess = K.get_session()
 
@@ -80,10 +71,7 @@ def draw_cv2(raw_strokes, size=256, lw=6, time_color=True):
         return img
 
 
-test2Json = json.dumps({"drawing":{"0":"[[[17, 174, 252, 255, 250, 250, 248, 244, 176, 136, 40, 15, 6, 3, 0, 5, 11], [4, 24, 25, 30, 48, 78, 92, 95, 92, 86, 86, 82, 79, 74, 15, 2, 0]], [[243, 243, 238, 219, 203, 17, 11, 3, 0, 0, 6, 10], [96, 157, 164, 154, 152, 156, 147, 143, 132, 94, 75, 75]], [[242, 229, 227, 215, 198, 179, 89, 42, 2, 0, 9, 12, 19], [165, 210, 214, 221, 220, 213, 213, 206, 204, 196, 177, 141, 136]], [[126, 120, 120, 132, 132, 123], [185, 192, 198, 197, 183, 183]]]"}})
-
-
-def predictOneDrawing(jsonData,size=64):
+def perpareDataAndPredict(jsonData,size=64):
     try:
         toPredict = pd.DataFrame(json.loads(jsonData))
         toPredict.head()
@@ -96,9 +84,19 @@ def predictOneDrawing(jsonData,size=64):
         print(e)
         pass
 
+# def load_model():
+global model, graph
+model = MobileNet(input_shape=(size, size, 1), alpha=1., weights=None, classes=NCATS)
+model.load_weights("./model/model.h5")
+model.compile(optimizer=Adam(lr=0.002), loss='categorical_crossentropy',
+              metrics=[categorical_crossentropy, categorical_accuracy, top_3_accuracy])
+# graph = tf.get_default_graph()
+print(model.summary())
+
+test2Json = json.dumps({"drawing":{"0":"[[[17, 174, 252, 255, 250, 250, 248, 244, 176, 136, 40, 15, 6, 3, 0, 5, 11], [4, 24, 25, 30, 48, 78, 92, 95, 92, 86, 86, 82, 79, 74, 15, 2, 0]], [[243, 243, 238, 219, 203, 17, 11, 3, 0, 0, 6, 10], [96, 157, 164, 154, 152, 156, 147, 143, 132, 94, 75, 75]], [[242, 229, 227, 215, 198, 179, 89, 42, 2, 0, 9, 12, 19], [165, 210, 214, 221, 220, 213, 213, 206, 204, 196, 177, 141, 136]], [[126, 120, 120, 132, 132, 123], [185, 192, 198, 197, 183, 183]]]"}})
 
 ## This line can print, which means this model works.
-print(categories[predictOneDrawing(test2Json)[0]])
+print(categories[perpareDataAndPredict(test2Json)[0]])
 
 
 
@@ -115,7 +113,7 @@ def printRaw():
     return jsonify(prediction)
 
 if __name__ == "__main__":
-    load_model()
+
     app.run(debug=True)
     # end = dt.datetime.now()
     # print('model started, {}.\nTotal time {}s'.format(end, (end - start).seconds))
