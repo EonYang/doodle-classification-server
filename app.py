@@ -45,6 +45,12 @@ def predictAPI():
     print("this is the response: ", response)
     return jsonify(response.tolist())
 
+@app.route("/api/test", methods=["GET"])
+def testServer():
+    return "working"
+
+
 
 if __name__ == "__main__":
+    # app.run(port = 5800)
     app.run(port = 5800, ssl_context=(pathToCert,pathToKey))
