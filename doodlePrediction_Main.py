@@ -53,4 +53,4 @@ def testServer():
 
 if __name__ == "__main__":
     # app.run(port = 5800)
-    app.run(host = "0,0,0,0",port = 5800, ssl_context=(pathToCert,pathToKey))
+    app.run(host = "0.0.0.0",port = 5800, ssl_context=(pathToCert,pathToKey))
