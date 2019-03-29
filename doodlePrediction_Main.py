@@ -1,4 +1,5 @@
 from flask import Flask , jsonify, request
+from flask_cors import CORS
 from predictor import *
 import random
 import json
@@ -24,6 +25,7 @@ end = dt.datetime.now()
 print('{}, server initialized in .\nTotal time {}s'.format(end, (end - start).seconds))
 
 app = Flask(__name__)
+CORS(app)
 
 pathToCert = "/etc/letsencrypt/live/point99.xyz/cert.pem"
 pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
@@ -39,11 +41,17 @@ def predictAPI():
     # print("this is the request: ", request.form.to_dict()["data"])
     image = request.form.to_dict()["data"]
     image = stringToRGB(image)
+    response = {'prediction':{
+    'numbers':[],
+    'names':[]
+    }}
     with sess.as_default():
         with graph.as_default():
-            response = prepareImageAndPredict(model, image)
-    print("this is the response: ", response)
-    return jsonify(response.tolist())
+            response['prediction']['numbers'] = prepareImageAndPredict(model, image).tolist()
+    for i in range(len(response['prediction']['numbers'])):
+        response['prediction']['names'].append(categories[response['prediction']['numbers'][i]])
+    print("this is the response: ", response['prediction']['names'])
+    return jsonify(response)
 
 @app.route("/api/test", methods=["GET"])
 def testServer():
@@ -52,5 +60,5 @@ def testServer():
 
 
 if __name__ == "__main__":
-    # app.run(port = 5800)
+    # app.run(port = 5800, debug = True)
     app.run(host = "0.0.0.0",port = 5800, ssl_context=(pathToCert,pathToKey))
