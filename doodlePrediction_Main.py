@@ -8,10 +8,8 @@ import numpy as np
 from tensorflow.keras import models
 import time
 import datetime
-from PIL import Image
-import io
+
 import cv2
-import base64
 import sys, getopt
 import os
 
@@ -55,10 +53,6 @@ def parseArgs(argv):
 pathToCert = "/etc/letsencrypt/live/point99.xyz/cert.pem"
 pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
 
-def stringToRGB(base64_string):
-    imgdata = base64.b64decode(str(base64_string))
-    image = Image.open(io.BytesIO(imgdata))
-    return cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
 
 @app.route("/api/doodlePredict", methods=["POST"])
 def predictAPI():
@@ -66,6 +60,7 @@ def predictAPI():
     print("this is the request: ", request.form.to_dict())
     image = request.form.to_dict()["data"]
     image = stringToRGB(image)
+    image = prepareImage(image)
     response = {'prediction':{
     'numbers':[],
     'names':[]
