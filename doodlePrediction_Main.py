@@ -76,7 +76,7 @@ def predictAPI():
     for i in range(len(response['prediction']['numbers'])):
         response['prediction']['names'].append(categories[response['prediction']['numbers'][i]])
     print("this is the response: ", response['prediction']['names'])
-    cv2.imwrite("./doodleHistory/"+ ','.join(response['prediction']['names']) +datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".jpg", image)
+    cv2.imwrite("./doodleHistory/"+ ', '.join(response['prediction']['names']) +", "+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".jpg", image)
     return jsonify(response)
 
 @app.route("/api/test", methods=["GET"])
