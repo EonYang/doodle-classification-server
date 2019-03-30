@@ -1,4 +1,4 @@
-from flask import Flask , jsonify, request
+from flask import Flask , jsonify, request, render_template, send_from_directory
 from flask_cors import CORS
 from predictor import *
 import random
@@ -7,11 +7,13 @@ import pandas as pd
 import numpy as np
 from tensorflow.keras import models
 import time
+import datetime
 from PIL import Image
 import io
 import cv2
 import base64
 import sys, getopt
+import os
 
 global model, sess, graph
 model, sess, graph = init()
@@ -74,13 +76,21 @@ def predictAPI():
     for i in range(len(response['prediction']['numbers'])):
         response['prediction']['names'].append(categories[response['prediction']['numbers'][i]])
     print("this is the response: ", response['prediction']['names'])
+    cv2.imwrite("./doodleHistory/"+ ','.join(response['prediction']['names']) +datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".jpg", image)
     return jsonify(response)
 
 @app.route("/api/test", methods=["GET"])
 def testServer():
     return "working"
 
+@app.route("/doodles", methods=["GET"])
+def sendGallery():
+    image_names = os.listdir("./doodleHistory")
+    return render_template("doodles.html", image_names = image_names)
 
+@app.route('/upload/<filename>')
+def send_image(filename):
+    return send_from_directory("doodleHistory", filename)
 
 if __name__ == "__main__":
 
