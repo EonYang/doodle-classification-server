@@ -58,9 +58,9 @@ pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
 def predictAPI():
     global model, graph
     print("this is the request: ", request.form.to_dict())
-    image = request.form.to_dict()["data"]
-    image = stringToRGB(image)
-    image = prepareImage(image)
+    image_raw = request.form.to_dict()["data"]
+    image_raw = stringToRGB(image_raw)
+    image = prepareImage(image_raw)
     response = {'prediction':{
     'numbers':[],
     'names':[]
@@ -71,7 +71,7 @@ def predictAPI():
     for i in range(len(response['prediction']['numbers'])):
         response['prediction']['names'].append(categories[response['prediction']['numbers'][i]])
     print("this is the response: ", response['prediction']['names'])
-    cv2.imwrite("./doodleHistory/"+ ', '.join(response['prediction']['names']) +", "+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".jpg", image)
+    cv2.imwrite("./doodleHistory/"+ ', '.join(response['prediction']['names']) +", "+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".jpg", image_raw)
     return jsonify(response)
 
 @app.route("/api/test", methods=["GET"])
