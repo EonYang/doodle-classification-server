@@ -11,6 +11,7 @@ from PIL import Image
 import io
 import cv2
 import base64
+import sys, getopt
 
 global model, sess, graph
 model, sess, graph = init()
@@ -26,6 +27,28 @@ print('{}, server initialized in .\nTotal time {}s'.format(end, (end - start).se
 
 app = Flask(__name__)
 CORS(app)
+https = False;
+devMode = False;
+# SSLify(app)
+
+def parseArgs(argv):
+    global https, devMode
+    try:
+        opts, args = getopt.getopt(argv,"sdh",["https", "dev", "help"])
+    except getopt.GetoptError:
+        print('no arguments, https = False')
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt in ("-h", "--help"):
+            print("-s --https run on https and port 1337, otherwise run on http and port 5800")
+            print("-d --dev   debuger on")
+            sys.exit()
+        elif opt in ("-s", "--https"):
+            https = True
+            print('enable https')
+        elif opt in ("-d", "--dev"):
+            devMode = True
+            print('enable debuger')
 
 pathToCert = "/etc/letsencrypt/live/point99.xyz/cert.pem"
 pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
@@ -38,7 +61,7 @@ def stringToRGB(base64_string):
 @app.route("/api/doodlePredict", methods=["POST"])
 def predictAPI():
     global model, graph
-    # print("this is the request: ", request.form.to_dict()["data"])
+    print("this is the request: ", request.form.to_dict())
     image = request.form.to_dict()["data"]
     image = stringToRGB(image)
     response = {'prediction':{
@@ -60,5 +83,11 @@ def testServer():
 
 
 if __name__ == "__main__":
-    # app.run(port = 5800, debug = True)
-    app.run(host = "0.0.0.0",port = 5800, ssl_context=(pathToCert,pathToKey))
+
+    parseArgs(sys.argv[1:])
+
+    if https:
+        app.run(host = "0.0.0.0",port = 1337, ssl_context=(pathToCert,pathToKey), debug = devMode)
+    else :
+        print("devmode =", devMode)
+        app.run(port = 5800, debug = devMode)
