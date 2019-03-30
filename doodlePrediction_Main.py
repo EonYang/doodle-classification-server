@@ -90,4 +90,4 @@ if __name__ == "__main__":
         app.run(host = "0.0.0.0",port = 1337, ssl_context=(pathToCert,pathToKey), debug = devMode)
     else :
         print("devmode =", devMode)
-        app.run(port = 5800, debug = devMode)
+        app.run(host = "0.0.0.0", port = 5800, debug = devMode)
