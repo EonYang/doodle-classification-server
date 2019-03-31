@@ -78,14 +78,19 @@ def predictAPI():
 def testServer():
     return "working"
 
+
 @app.route("/doodles", methods=["GET"])
 def sendGallery():
-    image_names = os.listdir("./doodleHistory")
+    doodlePath = "./doodleHistory"
+    image_names = [f for f in os.listdir(doodlePath) if not f.startswith('.')]
+    os.chdir(doodlePath)
+    image_names.sort(key=os.path.getmtime, reverse = True)
     return render_template("doodles.html", image_names = image_names)
 
 @app.route('/upload/<filename>')
 def send_image(filename):
-    return send_from_directory("doodleHistory", filename)
+    return send_from_directory("./doodleHistory", filename)
+    # return filename
 
 if __name__ == "__main__":
 
