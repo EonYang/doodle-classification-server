@@ -1,3 +1,3 @@
 # flaskServer
 
-run `app.py` to create a server;
+run `doodlePrediction_Main.py` to create a server;
