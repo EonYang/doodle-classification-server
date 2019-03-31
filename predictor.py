@@ -145,12 +145,14 @@ def prepareImage(im):
     sum4 = im.sum(axis = 1)
     x2 = 1
     y2 = 1
-    while sum3[-x2] ==0:
+    while x2 < len(sum3) and sum3[-x2] ==0:
         x2 += 1
-    while sum4[-y2] ==0:
+    while y2 < len(sum4) and sum4[-y2] ==0:
         y2 += 1
     w = size - x2
     h = size - y2
     contentSize = w if w > h  else  h
-    im = im[0:contentSize, 0:contentSize]
+    # only crop if there is realy content
+    if contentSize > 16:
+        im = im[0:contentSize, 0:contentSize]
     return im
