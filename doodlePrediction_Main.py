@@ -85,6 +85,7 @@ def sendGallery():
     image_names = [f for f in os.listdir(doodlePath) if not f.startswith('.')]
     os.chdir(doodlePath)
     image_names.sort(key=os.path.getmtime, reverse = True)
+    os.chdir("..")
     return render_template("doodles.html", image_names = image_names)
 
 @app.route('/upload/<filename>')
