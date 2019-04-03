@@ -54,7 +54,7 @@ binoculars,29,Tools,,20,1,Class default,The screen should zoom in.,,,,0,
 clock,72,Tools,,1,1,Class default,The time is {time},,,,0,
 calendar,52,Tools,,1,1,Class default,Today is {data},,,,0,
 angel,3,Birds,,80,1,An angel come down from heaven,"You are blessed by the angel, keep going maybe you can find fortune.",,,,0,
-flying saucer,121,Aviations,,300,1,"Look, UFO!","You are captured by Aliens, game over.",,,100,0,
+flying saucer,121,Aviations,,300,1,"Look, UFO!","Look! An UFO! Then you are captured by ALIENS. Sorry mate, game over.",,,100,0,
 hot air balloon,148,Aviations,,300,1,Class default,"You are flying, end of the game.",,,,1,"Using the HOT AIR BALLOON which you created, you fly over the fence and keep flying to you home. Enter Level 3."
 ladder,162,Tools,,200,1,Class default,You can climb over something.,,,,1,"Using the LADDER which you created, you climb over the fence and running to your hometown. Enter Level 2."
 power outlet,230,Electrical,,10,1,Class default,You can use electrical facilities now.,,,,0,
