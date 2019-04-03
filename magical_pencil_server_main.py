@@ -5,6 +5,7 @@ import random
 import json
 import pandas as pd
 import numpy as np
+import csv
 from tensorflow.keras import models
 import time
 import datetime
@@ -52,7 +53,17 @@ def parseArgs(argv):
 
 pathToCert = "/etc/letsencrypt/live/point99.xyz/cert.pem"
 pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
+pathToItemData = "./data/ItemsAndTags.csv"
 
+@app.route("/api/getItemData", methods=["GET"])
+def getItemDataAPI():
+    r = {"items": []}
+    with open(pathToItemData) as csvData:
+        reader = csv.DictReader(csvData)
+        for row in reader:
+            r["items"].append(row)
+            r["items"].sort(key = lambda e: int(e["Id"]) )
+    return jsonify(r)
 
 @app.route("/api/doodlePredict", methods=["POST"])
 def predictAPI():
