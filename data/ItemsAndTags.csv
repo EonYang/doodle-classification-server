@@ -1,341 +1,341 @@
-Name,Id,Tag1,Tag2,SizeH,Special,Story,SpecialStory,RecoverHP,Attack,DemageToPlayer,CanSolvePuzzle1,Puzzle1Story
-rainbow,236,Weather,,200,1,Class default,"A beautiful rainbow occurs, the only colorful thing in this game.",,,,0,
-pond,225,Environmental,,30,1,Wow!,"A pond, ok. Now let's install a diving board.",,,,0,
-pool,226,Environmental,,30,1,Wow!,"A pool, ok. Now let's install a diving board.",,,,0,
-moon,184,Environmental,,0,1,"Stop, you're abusing your power.",Added a moon in the sky. This is rediculous,,,,0,
-star,279,Environmental,,10,1,"A star fragment, maybe it can make a good jewelry.",Added one star in the sky.,,,,0,
-car,60,Vehicles,,100,1,Class default,Do you really wanna drive this car? This will make this game boring.,,,,0,
-pickup truck,217,Vehicles,,120,1,Class default,Do you really wanna drive this car? This will make this game boring.,,,,0,
-sleeping bag,262,Furnitures,,30,1,Class default,Do you wanna sleep in this sleeping bag right now?,,,,2,"You slept in the SLEEPING BAG near the fence. However, they found your deserting the next morning and captured you. Game Over."
-tent,303,Furnitures,,150,1,Class default,Do you wanna sleep in this tent right now?,,,,0,
-bed,24,Furnitures,,50,1,Class default,Do you wanna sleep on this bed right now?,,,,0,
-couch,79,Furnitures,,50,1,Class default,Do you wanna sleep on this couch right now?,,,,0,
-river,240,Environmental,,30,1,Wow!,"Hmm, a river, I don't know what to do with it.",,,,0,
-alarm clock,1,Tools,,1,1,Class default,I've no idea what should happen.,,,,0,
-chandelier,68,Illumination,,20,,Class default,"If it's night, your surrounding is illuminated.",,,,0,
-floor lamp,119,Illumination,,150,,Class default,"If it's night, your surrounding is illuminated.",,,,0,
-lighthouse,168,Illumination,,200,,Class default,"If it's night, your surrounding is illuminated.",,,,0,
-streetlight,287,Illumination,,200,,Class default,"If it's night, your surrounding is illuminated.",,,,0,
-candle,57,Illumination,,10,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,
-flashlight,117,Illumination,,10,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,
-lantern,163,Illumination,,30,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,
-umbrella,323,Tools,,40,1,Class default,"If it's raining, this can save your day.",,,,0,
-bridge,41,Environmental,,200,1,"A bridge, how can I use it?","If near water, you can cross the water by this bridge.",,,,0,
-parachute,208,Tools,,30,1,Class default,"If you are near a cliff, you can jump down safely.",,,,0,
-rhinoceros,239,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,1,"The RHINOCEROS breaks the fence, which allows you leaving the barrack, running forward to you hometown. "
-bear,22,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,
-lion,171,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,
-snake,265,Terrestrial Animals,,30,1,Class default,It attacks you and you are dead. Game over.,,,,0,
-tiger,307,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,
-hurricane,154,Weather,,300,1,"Look, a hurricane! It's dangerous!","Look, a hurricane! It's dangerous! Inevitably, you die from the hurricane.",,,,0,
-tornado,314,Weather,,300,1,"Look, a hurricane! It's dangerous!","Look, a hurricane! It's dangerous! Inevitably, you die from the hurricane.",,,,0,
-jail,157,Buildings,,200,1,Class default,Next episode: Jailbreak.,,,,0,
-church,69,Buildings,,200,1,Class default,"No priest in this church, it's only a shelter. Do you wanna sleep here for today?",,,,0,
-hospital,147,Buildings,,200,1,Class default,"Nobody works in this hospital, it's only a shelter. Do you wanna sleep here for today?",,,,0,
-windmill,333,Buildings,,200,1,Class default,"Nobody works in this windmill, it's only a shelter. Do you wanna sleep here for today?",,,,0,
-birthday cake,31,Foods,,20,1,Class default,Playing birthday song,,,,0,
-headphones,139,Electrical,,10,1,You get a headphone.,Playing music,,,,0,
-cello,66,Musical Instruments,,60,1,Class default,Playing music.,,,,0,
-clarinet,71,Musical Instruments,,50,1,Class default,Playing music.,,,,0,
-drums,97,Musical Instruments,,40,1,Class default,Playing music.,,,,0,
-guitar,133,Musical Instruments,,50,1,Class default,Playing music.,,,,0,
-harp,137,Musical Instruments,,80,1,Class default,Playing music.,,,,0,
-keyboard,160,Musical Instruments,,30,1,Class default,Playing music.,,,,0,
-piano,216,Musical Instruments,,50,1,Class default,Playing music.,,,,0,
-saxophone,246,Musical Instruments,,40,1,Class default,Playing music.,,,,0,
-trombone,320,Musical Instruments,,40,1,Class default,Playing music.,,,,0,
-trumpet,322,Musical Instruments,,40,1,Class default,Playing music.,,,,0,
-violin,327,Musical Instruments,,30,1,Class default,Playing music.,,,,0,
-crocodile,83,Amphibians,,30,1,Class default,The crocodile bits you and you are dead.,,,100,0,
-dragon,94,Birds,,200,1,A dragon appears,The dragon attacks you and you're dead. Game over.,,,,0,
-camera,54,Tools,,1,1,Class default,The game will take a screenshot.,,,,0,
-map,176,Tools,,1,1,Class default,The map of this game will show.,,,,0,
-binoculars,29,Tools,,20,1,Class default,The screen should zoom in.,,,,0,
-clock,72,Tools,,1,1,Class default,The time is {time},,,,0,
-calendar,52,Tools,,1,1,Class default,Today is {data},,,,0,
-angel,3,Birds,,80,1,An angel come down from heaven,"You are blessed by the angel, keep going maybe you can find fortune.",,,,0,
-flying saucer,121,Aviations,,300,1,"Look, UFO!","Look! An UFO! Then you are captured by ALIENS. Sorry mate, game over.",,,100,0,
-hot air balloon,148,Aviations,,300,1,Class default,"You are flying, end of the game.",,,,1,"Using the HOT AIR BALLOON which you created, you fly over the fence and keep flying to you home. Enter Level 3."
-ladder,162,Tools,,200,1,Class default,You can climb over something.,,,,1,"Using the LADDER which you created, you climb over the fence and running to your hometown. Enter Level 2."
-power outlet,230,Electrical,,10,1,Class default,You can use electrical facilities now.,,,,0,
-light bulb,167,Electrical,,10,1,"Amazing, this light bulb works without electricity. Oh I see, it's light bulb of idea.",You come up with a brilliant idea.,,,,0,
-wine bottle,334,Beverages,,10,1,Class default,"You drink the wine and you feel dizzy, need to sleep.",10,,,0,
-wine glass,335,Beverages,,20,1,Class default,"You drink the wine and you feel dizzy, need to sleep.",10,,,0,
-ice cream,155,Foods,,10,1,Class default,You feel chill now.,20,,,0,
-palm tree,204,Plants,,200,1,Class default,"You feel chill under the tree. Caution: if there is lighting, you will get hit.",,,,0,
-tree,318,Plants,,200,1,Class default,"You feel chill under the tree. Caution: if there is lighting, you will get hit.",,,,0,
-fireplace,113,Furnitures,,60,1,Class default,You feel warm now,,,,0,
-campfire,56,Environmental,,40,1,You start a campfire.,You feel warm now.,,,,0,
-barn,14,Buildings,,200,1,Class default,"You get a shelter, do you wanna sleep here for today?",,,,0,
-house,152,Buildings,,200,1,Class default,"You get a shelter, do you wanna sleep here for today?",,,,0,
-mosquito,185,Insects,,5,1,"Annoying mosquito, go away!",You got bite and lost 1 HP. ,,,,0,
-scorpion,249,Insects,,5,1,Class default,You got bite and lost 20 HP.,,,,0,
-matches,178,Tools,,1,1,Class default,"You see your grandma, your fami... and it gone.",,,,0,
-police car,224,Vehicles,,100,1,Class default,You're a deserter and the police caught you. Next level: Jail break.,,,,0,
-bicycle,28,Vehicles,,60,1,Class default,You're cycling! Moving speed increased by 100%.,,,,0,
-camel,53,Terrestrial Animals,,150,1,Class default,"You're riding a camel! Moving speed increased by 50%, and you are able to ride it in the desert!",,,,0,
-motorbike,186,Vehicles,,70,1,Class default,You're riding a chopper! Moving speed increased by 200%.,,,,0,
-horse,146,Terrestrial Animals,,150,1,Class default,You're riding a horse! Moving speed increased by 100%.,,,,0,
-fence,110,Environmental,,80,1,A fence appears,Your fence is blocking your way.,,,,0,
-circle,70,Abstract,,0,,Class default,,,,,0,
-hexagon,143,Abstract,,0,,Class default,,,,,0,
-line,170,Abstract,,0,,Class default,,,,,0,
-octagon,197,Abstract,,0,,Class default,,,,,0,
-spreadsheet,274,Abstract,,0,,Class default,,,,,0,
-square,275,Abstract,,0,,Class default,,,,,0,
-squiggle,276,Abstract,,0,,Class default,,,,,0,
-triangle,319,Abstract,,0,,Class default,,,,,0,
-zigzag,339,Abstract,,0,,Class default,,,,,0,
-crab,81,Amphibians,,10,,Class default,,,,,0,
-frog,124,Amphibians,,10,,Class default,,,,,0,
-penguin,215,Amphibians,,60,,Class default,,,,,0,
-sea turtle,251,Amphibians,,30,,Class default,,,,,0,
-baseball,15,Artifacts,,10,,Class default,,,,,0,
-basket,17,Artifacts,,50,,Class default,,,,,0,
-basketball,18,Artifacts,,30,,Class default,,,,,0,
-book,34,Artifacts,,30,,Class default,,,,,0,
-bottlecap,36,Artifacts,,5,,Class default,,,,,0,
-dumbbell,99,Artifacts,,15,,Class default,,,,,0,
-envelope,103,Artifacts,,20,,Class default,,,,,0,
-feather,109,Artifacts,,20,,Class default,,,,,0,
-leaf,165,Artifacts,,10,,Class default,,,,,0,
-passport,210,Artifacts,,10,,Class default,,,,,0,
-picture frame,218,Artifacts,,60,,Class default,,,,,0,
-postcard,228,Artifacts,,20,,Class default,,,,,0,
-purse,231,Artifacts,,10,,Class default,,,,,0,
-skull,260,Artifacts,,20,,Class default,,,,,0,
-soccer ball,269,Artifacts,,30,,Class default,,,,,0,
-teddy-bear,299,Artifacts,,30,,Class default,,,,,0,
-The Eiffel Tower,304,Artifacts,,10,,You get a magnet souvenir of Eiffel Tower.,,,,,0,
-The Great Wall of China,305,Artifacts,,10,,You get a magnet souvenir of The Great Wall.,,,,,0,
-The Mona Lisa,306,Artifacts,,60,,Class default,,,,,0,
-vase,326,Artifacts,,40,,Class default,,,,,0,
-airplane,0,Aviations,,300,,You get an AIRPLANE but you don't know how to pilot.,,,,,0,
-helicopter,141,Aviations,,300,,You get a HELICOPTER but you don't know how to pilot.,,,,,0,
-coffee cup,74,Beverages,,10,,Class default,,15,,,0,
-cup,86,Beverages,,10,,Class default,,15,,,0,
-mug,191,Beverages,,10,,Class default,,15,,,0,
-teapot,298,Beverages,,10,,Class default,,15,,,0,
-bird,30,Birds,,10,,Class default,,,,,0,
-flamingo,116,Birds,,60,,Class default,,,,,0,
-owl,201,Birds,,30,,Class default,,,,,0,
-parrot,209,Birds,,30,,Class default,,,,,0,
-swan,292,Birds,,60,,Class default,,,,,0,
-arm,8,Body Parts,,40,,Class default,,,,,0,
-beard,23,Body Parts,,5,,Class default,,,,,0,
-brain,39,Body Parts,,10,,Class default,,,,,0,
-ear,100,Body Parts,,5,,Class default,,,,,0,
-elbow,101,Body Parts,,20,,Class default,,,,,0,
-eye,105,Body Parts,,5,,Class default,,,,,0,
-face,107,Body Parts,,20,,Class default,,,,,0,
-finger,111,Body Parts,,5,,Class default,,,,,0,
-foot,122,Body Parts,,10,,Class default,,,,,0,
-goatee,129,Body Parts,,5,,Class default,,,,,0,
-hand,136,Body Parts,,5,,Class default,,,,,0,
-knee,161,Body Parts,,5,,Class default,,,,,0,
-leg,166,Body Parts,,40,,Class default,,,,,0,
-moustache,189,Body Parts,,5,,Class default,,,,,0,
-mouth,190,Body Parts,,5,,Class default,,,,,0,
-nose,195,Body Parts,,5,,Class default,,,,,0,
-toe,309,Body Parts,,5,,Class default,,,,,0,
-tooth,311,Body Parts,,5,,Class default,,,,,0,
-castle,62,Buildings,,200,,"Hey, don't abuse you power.",,,,,0,
-skyscraper,261,Buildings,,200,,"Hey, don't abuse you power.",,,,,0,
-belt,26,Clothes,,5,,Class default,,,,,0,
-bowtie,37,Clothes,,5,,Class default,,,,,0,
-flip flops,118,Clothes,,5,,Class default,,,,,0,
-hat,138,Clothes,,10,,Class default,,,,,0,
-helmet,142,Clothes,,10,,Class default,,,,,0,
-jacket,156,Clothes,,40,,Class default,,,,,0,
-pants,206,Clothes,,40,,Class default,,,,,0,
-shoe,255,Clothes,,10,,Class default,,,,,0,
-shorts,256,Clothes,,10,,Class default,,,,,0,
-sock,270,Clothes,,20,,Class default,,,,,0,
-sweater,293,Clothes,,30,,Class default,,,,,0,
-t-shirt,296,Clothes,,30,,Class default,,,,,0,
-underwear,324,Clothes,,10,,Class default,,,,,0,
-ceiling fan,64,Electrical,,20,,"But, there's no ceiling.",,,,,0,
-cell phone,65,Electrical,,10,,No signal.,,,,,0,
-computer,76,Electrical,,30,,No internet connection.,,,,,0,
-dishwasher,88,Electrical,,50,,Class default,,,,,0,
-laptop,164,Electrical,,30,,No internet connection.,,,,,0,
-microphone,181,Electrical,,10,,You don't know how to use it.,,,,,0,
-microwave,182,Electrical,,30,,Class default,,,,,0,
-radio,234,Electrical,,20,,Class default,,,,,0,
-remote control,238,Electrical,,10,,"A remote control, seems the only usage is throwing toward enemies.",,,,,0,
-stereo,281,Electrical,,30,,Class default,,,,,0,
-telephone,300,Electrical,,20,,No carrier.,,,,,0,
-television,301,Electrical,,40,,"Do you have electricity? Anyway, there's no signal.",,,,,0,
-washing machine,328,Electrical,,30,,Class default,,,,,0,
-beach,21,Environmental,,20,,You only got a beautiful picture of this beach.,,,,,0,
-bush,47,Environmental,,30,,A beautiful bush grows on the ground.,,,,,0,
-cloud,73,Environmental,,30,,A small cloud is floating above you.,,,,,0,
-diving board,89,Environmental,,30,,You installed a diving board. But is there a pool?,,,,,0,
-fire hydrant,112,Environmental,,50,,"You installed a fire hydrant on the ground. Nice, the fire fighters might need this someday.",,,,,0,
-garden,126,Environmental,,50,,You created a small beautiful garden.,,,,,0,
-mountain,187,Environmental,,20,,You only got a beautiful picture of this mountain.,,,,,0,
-ocean,196,Environmental,,20,,You only got a beautiful picture of this ocean.,,,,,0,
-roller coaster,241,Environmental,,20,,You only got a beautiful picture of this roller coaster. Now you wish you can go to Disney land.,,,,,0,
-see saw,252,Environmental,,50,,"You created a see saw, but it needs two people to play.",,,,,0,
-snowman,268,Environmental,,60,,You created a snowman.,,,,,0,
-stop sign,284,Environmental,,100,,A stop sign in the middle of nowhere.,,,,,0,
-sun,291,Environmental,,20,,"You draw a sun, but nothing happens.",,,,,0,
-swing set,294,Environmental,,200,,A swing set in the middle of nowhere.,,,,,0,
-traffic light,316,Environmental,,50,,A traffic light in the middle of nowhere.,,,,,0,
-waterslide,330,Environmental,,200,,A waterslide in the middle of nowhere.,,,,,0,
-broccoli,42,Food Materials,,10,,Class default,,,,,0,
-carrot,61,Food Materials,,10,,Class default,,,,,0,
-lobster,173,Food Materials,,10,,Class default,,,,,0,
-mushroom,192,Food Materials,,10,,Class default,,,,,0,
-onion,199,Food Materials,,10,,Class default,,,,,0,
-potato,229,Food Materials,,10,,Class default,,,,,0,
-string bean,288,Food Materials,,10,,Class default,,,,,0,
-apple,7,Foods,,10,,Class default,,10,,,0,
-asparagus,9,Foods,,10,,Class default,,10,,,0,
-banana,12,Foods,,10,,Class default,,10,,,0,
-blackberry,32,Foods,,10,,Class default,,10,,,0,
-blueberry,33,Foods,,10,,Class default,,10,,,0,
-bread,40,Foods,,10,,Class default,,10,,,0,
-cake,50,Foods,,10,,Class default,,10,,,0,
-cookie,77,Foods,,10,,Class default,,10,,,0,
-donut,92,Foods,,10,,Class default,,10,,,0,
-grapes,131,Foods,,10,,Class default,,10,,,0,
-hamburger,134,Foods,,10,,Class default,,20,,,0,
-hot dog,149,Foods,,10,,Class default,,10,,,0,
-lollipop,174,Foods,,10,,Class default,,5,,,0,
-peanut,211,Foods,,10,,Class default,,10,,,0,
-pear,212,Foods,,10,,Class default,,10,,,0,
-peas,213,Foods,,10,,Class default,,10,,,0,
-pineapple,221,Foods,,15,,Class default,,10,,,0,
-pizza,222,Foods,,10,,Class default,,30,,,0,
-popsicle,227,Foods,,10,,Class default,,10,,,0,
-sandwich,244,Foods,,10,,Class default,,10,,,0,
-steak,280,Foods,,10,,Class default,,10,,,0,
-strawberry,286,Foods,,10,,Class default,,10,,,0,
-watermelon,329,Foods,,20,,Class default,,20,,,0,
-bathtub,20,Furnitures,,40,,Class default,,,,,0,
-bench,27,Furnitures,,30,,Class default,,,,,0,
-door,93,Furnitures,,100,,Class default,,,,,0,
-dresser,95,Furnitures,,40,,Class default,,,,,0,
-hot tub,150,Furnitures,,40,,Class default,,,,,0,
-oven,200,Furnitures,,40,,Class default,,,,,0,
-pillow,220,Furnitures,,20,,Class default,,,,,0,
-sink,258,Furnitures,,30,,Class default,,,,,0,
-stove,285,Furnitures,,40,,Class default,,,,,0,
-table,297,Furnitures,,40,,Class default,,,,,0,
-toaster,308,Furnitures,,20,,Class default,,,,,0,
-toilet,310,Furnitures,,40,,Class default,,,,,0,
-ant,5,Insects,,5,,Class default,,,,,0,
-bee,25,Insects,,5,,Class default,,,,,0,
-butterfly,48,Insects,,5,,Class default,,,,,0,
-snail,264,Insects,,5,,Class default,,,,,0,
-spider,272,Insects,,5,,Class default,,,,,0,
-bracelet,38,Jewelries,,5,,Class default,,,,,0,
-crown,84,Jewelries,,5,,Class default,,,,,0,
-diamond,87,Jewelries,,5,,Class default,,,,,0,
-necklace,194,Jewelries,,5,,Class default,,,,,0,
-dolphin,91,Marine Animals,,100,,Class default,,,,,0,
-fish,115,Marine Animals,,20,,Class default,,,,,0,
-mermaid,180,Marine Animals,,100,,Class default,,,,,0,
-octopus,198,Marine Animals,,20,,Class default,,,,,0,
-shark,253,Marine Animals,,100,,Class default,,,,,0,
-whale,331,Marine Animals,,100,,Class default,,,,,0,
-animal migration,4,No Effect,,1,,Class default,,,,,0,
-camouflage,55,No Effect,,1,,Class default,,,,,0,
-cat,63,No Effect,,1,,You can only make new cat after you're married.,,,,,0,
-dog,90,No Effect,,1,,"Dogs are residence in this world, it's illegal to spawn a dog.",,,,,0,
-smiley face,263,No Effect,,1,,Class default,,,,,0,
-stitches,283,No Effect,,1,,Class default,,,,,0,
-yoga,337,No Effect,,1,,Class default,,,,,0,
-cactus,49,Plants,,50,,Class default,,,,,0,
-flower,120,Plants,,30,,Class default,,,,,0,
-grass,132,Plants,,20,,Class default,,,,,0,
-house plant,153,Plants,,30,,Class default,,,,,0,
-canoe,59,Ships,,100,,Class default,,,,,0,
-cruise ship,85,Ships,,100,,Class default,,,,,0,
-sailboat,243,Ships,,100,,Class default,,,,,0,
-speedboat,271,Ships,,100,,Class default,,,,,0,
-submarine,289,Ships,,100,,Class default,,,,,0,
-cow,80,Terrestrial Animals,,150,,Class default,,,,,0,
-duck,98,Terrestrial Animals,,30,,Class default,,,,,0,
-elephant,102,Terrestrial Animals,,200,,Class default,,,,,0,
-giraffe,128,Terrestrial Animals,,300,,Class default,,,,,0,
-hedgehog,140,Terrestrial Animals,,20,,Class default,,,,,0,
-kangaroo,158,Terrestrial Animals,,150,,Class default,,,,,0,
-monkey,183,Terrestrial Animals,,40,,Class default,,,,,0,
-mouse,188,Terrestrial Animals,,10,,Class default,,,,,0,
-panda,205,Terrestrial Animals,,100,,Class default,,,,,0,
-pig,219,Terrestrial Animals,,100,,Class default,,,,,0,
-rabbit,232,Terrestrial Animals,,30,,Class default,,,,,0,
-raccoon,233,Terrestrial Animals,,30,,Class default,,,,,0,
-sheep,254,Terrestrial Animals,,50,,Class default,,,,,0,
-squirrel,277,Terrestrial Animals,,20,,Class default,,,,,0,
-zebra,338,Terrestrial Animals,,150,,Class default,,,,,0,
-axe,10,Tools,,50,,Class default,,,,,1,"Using the AXE which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2."
-drill,96,Tools,,10,,Class default,,,,,1,"Using the DRILL which you created, You cut the fence and leave the barrack, marching forward to you hometown. Enter Level 2."
-hammer,135,Tools,,30,,Class default,,,,,1,"Using the HAMMER which you created, You break the fence and leave the barrack, marching forward to you hometown. Enter Level 2."
-pliers,223,Tools,,20,,Class default,,,,,1,"Using the PLIERS which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2."
-saw,245,Tools,,30,,Class default,,,,,1,"Using the SAW which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2."
-shovel,257,Tools,,50,,Class default,,,,,1,"Using the SHOVEL which you created, You dig a hole and climb to the other side of the fence, running forward to you hometown. Enter Level 2."
-stairs,278,Tools,,100,,Class default,,,,,1,"Using the STAIRS which you created, you climb over the fence and running to your hometown. Enter Level 2."
-sword,295,Tools,,60,,Class default,,,,,1,"Using the SWORD which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2."
-cannon,58,Tools,,80,,Class default,,,,,2,"Using the CANNON which you created, You tried to break the fence. However, it was too loud, and the other soldiers notice you are running away. They catch you and you are sentenced to die. Game Over."
-anvil,6,Tools,,20,,Class default,,,,,0,
-backpack,11,Tools,,30,,Class default,,,,,0,
-bandage,13,Tools,,10,,Class default,,,,,0,
-baseball bat,16,Tools,,50,,Class default,,,,,0,
-bat,19,Tools,,60,,Class default,,,,,0,
-boomerang,35,Tools,,30,,Class default,,,,,0,
-broom,43,Tools,,60,,Class default,,,,,0,
-bucket,44,Tools,,30,,Class default,,,,,0,
-calculator,51,Tools,,10,,Class default,,,,,0,
-chair,67,Tools,,50,1,"You get a chair, you can sit on it if you want, but I tell you, it's actually a decent weapon.",,,,,0,
-compass,75,Tools,,10,,Class default,,,,,0,
-cooler,78,Tools,,40,,Class default,,,,,0,
-crayon,82,Tools,,5,,Class default,,,,,0,
-eraser,104,Tools,,5,,Class default,,,,,0,
-eyeglasses,106,Tools,,10,,Class default,,,,,0,
-fan,108,Tools,,30,,Class default,,,,,0,
-fork,123,Tools,,10,,Class default,,,,,0,
-frying pan,125,Tools,,30,,Class default,,,,,0,
-garden hose,127,Tools,,10,,Class default,,,,,0,
-golf club,130,Tools,,60,,Class default,,,,,0,
-hockey puck,144,Tools,,10,,Class default,,,,,0,
-hockey stick,145,Tools,,60,,Class default,,,,,0,
-hourglass,151,Tools,,10,,Class default,,,,,0,
-key,159,Tools,,5,,Class default,,,,,0,
-lipstick,172,Tools,,5,,Class default,,,,,0,
-mailbox,175,Tools,,50,,Class default,,,,,0,
-marker,177,Tools,,5,,Class default,,,,,0,
-megaphone,179,Tools,,10,,Class default,,,,,0,
-nail,193,Tools,,5,,Class default,,,,,0,
-paint can,202,Tools,,5,,Class default,,,,,0,
-paintbrush,203,Tools,,5,,Class default,,,,,0,
-paper clip,207,Tools,,5,,Class default,,,,,0,
-pencil,214,Tools,,5,,Class default,,,,,0,
-rake,237,Tools,,50,,Class default,,,,,0,
-scissors,248,Tools,,10,,Class default,,,,,0,
-screwdriver,250,Tools,,10,,Class default,,,,,0,
-snorkel,266,Tools,,5,,Class default,,,,,0,
-spoon,273,Tools,,10,,Class default,,,,,0,
-stethoscope,282,Tools,,30,,Class default,,,,,0,
-suitcase,290,Tools,,40,,Class default,,,,,0,
-tennis racquet,302,Tools,,40,,Class default,,,,,0,
-toothbrush,312,Tools,,10,,Class default,,,,,0,
-toothpaste,313,Tools,,10,,Class default,,,,,0,
-wheel,332,Tools,,20,,Class default,,,,,0,
-wristwatch,336,Tools,,5,,Class default,,,,,0,
-bulldozer,45,Vehicles,,100,,Class default,,,,,2,"You tried to break the fence with the BULLDOZER. However, it was too loud, and the other soldiers noticed you are running away. They caught you and now you are sentenced to die. Game Over."
-ambulance,2,Vehicles,,100,,Class default,,,,,0,
-bus,46,Vehicles,,100,,Class default,,,,,0,
-firetruck,114,Vehicles,,100,,Class default,,,,,0,
-rollerskates,242,Vehicles,,20,,Class default,,,,,0,
-school bus,247,Vehicles,,100,,Class default,,,,,0,
-skateboard,259,Vehicles,,20,,Class default,,,,,0,
-tractor,315,Vehicles,,100,,Class default,,,,,0,
-train,317,Vehicles,,100,,Class default,,,,,0,
-truck,321,Vehicles,,100,,Class default,,,,,0,
-van,325,Vehicles,,100,,Class default,,,,,0,
-lightning,169,Weather,,300,,"A lighting hits a tree in the distance, it's scare.",,,,,0,
-rain,235,Weather,,1,1,It's raining now. Do you have a umbralla?,,,,,0,
-snowflake,267,Weather,,1,,It's snowing and so cold now.,,,,,0,
+Name,Id,Tag1,Tag2,SizeH,Special,Story,SpecialStory,RecoverHP,Attack,DemageToPlayer,CanSolvePuzzle1,Puzzle1Story,AnA
+flip flops,118,Clothes,,5,,Class default,,,,,0,,a pair of 
+headphones,139,Electrical,,10,1,You get a headphone.,Playing music,,,,0,,a pair of 
+rollerskates,242,Vehicles,,20,,Class default,,,,,0,,a pair of 
+scissors,248,Tools,,10,,Class default,,,,,0,,a pair of 
+staircase,278,Tools,,100,,Class default,,,,,1,"Using the STAIRS which you created, you climb over the fence and running to your hometown. Enter Level 2.",a
+backpack,11,Tools,,30,,Class default,,,,,0,,a 
+banana,12,Foods,,10,,Class default,,10,,,0,,a 
+bandage,13,Tools,,10,,Class default,,,,,0,,a 
+barn,14,Buildings,,200,1,Class default,"You get a shelter, do you wanna sleep here for today?",,,,0,,a 
+baseball,15,Artifacts,,10,,Class default,,,,,0,,a 
+baseball bat,16,Tools,,50,,Class default,,,,,0,,a 
+basket,17,Artifacts,,50,,Class default,,,,,0,,a 
+basketball,18,Artifacts,,30,,Class default,,,,,0,,a 
+bat,19,Tools,,60,,Class default,,,,,0,,a 
+bathtub,20,Furnitures,,40,,Class default,,,,,0,,a 
+beach,21,Environmental,,20,,You only got a beautiful picture of this beach.,,,,,0,,a 
+bear,22,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,,a 
+beard,23,Body Parts,,5,,Class default,,,,,0,,a 
+bed,24,Furnitures,,50,1,Class default,Do you wanna sleep on this bed right now?,,,,0,,a 
+bee,25,Insects,,5,,Class default,,,,,0,,a 
+belt,26,Clothes,,5,,Class default,,,,,0,,a 
+bench,27,Furnitures,,30,,Class default,,,,,0,,a 
+bicycle,28,Vehicles,,60,1,Class default,You're cycling! Moving speed increased by 100%.,,,,0,,a 
+bird,30,Birds,,10,,Class default,,,,,0,,a 
+birthday cake,31,Foods,,20,1,Class default,Playing birthday song,,,,0,,a 
+blackberry,32,Foods,,10,,Class default,,10,,,0,,a 
+blueberry,33,Foods,,10,,Class default,,10,,,0,,a 
+book,34,Artifacts,,30,,Class default,,,,,0,,a 
+boomerang,35,Tools,,30,,Class default,,,,,0,,a 
+bottlecap,36,Artifacts,,5,,Class default,,,,,0,,a 
+bowtie,37,Clothes,,5,,Class default,,,,,0,,a 
+bracelet,38,Jewelries,,5,,Class default,,,,,0,,a 
+brain,39,Body Parts,,10,,Class default,,,,,0,,a 
+bread,40,Foods,,10,,Class default,,10,,,0,,a 
+bridge,41,Environmental,,200,1,"A bridge, how can I use it?","If near water, you can cross the water by this bridge.",,,,0,,a 
+broccoli,42,Food Materials,,10,,Class default,,,,,0,,a 
+broom,43,Tools,,60,,Class default,,,,,0,,a 
+bucket,44,Tools,,30,,Class default,,,,,0,,a 
+bulldozer,45,Vehicles,,100,,Class default,,,,,2,"You tried to break the fence with the BULLDOZER. However, it was too loud, and the other soldiers noticed you are running away. They caught you and now you are sentenced to die. Game Over.",a 
+bus,46,Vehicles,,100,,Class default,,,,,0,,a 
+bush,47,Environmental,,30,,A beautiful bush grows on the ground.,,,,,0,,a 
+butterfly,48,Insects,,5,,Class default,,,,,0,,a 
+cactus,49,Plants,,50,,Class default,,,,,0,,a 
+cake,50,Foods,,10,,Class default,,10,,,0,,a 
+calculator,51,Tools,,10,,Class default,,,,,0,,a 
+calendar,52,Tools,,1,1,Class default,Today is {data},,,,0,,a 
+camel,53,Terrestrial Animals,,150,1,Class default,"You're riding a camel! Moving speed increased by 50%, and you are able to ride it in the desert!",,,,0,,a 
+camera,54,Tools,,1,1,Class default,The game will take a screenshot.,,,,0,,a 
+camouflage,55,No Effect,,1,,Class default,,,,,0,,a 
+campfire,56,Environmental,,40,1,You start a campfire.,You feel warm now.,,,,0,,a 
+candle,57,Illumination,,10,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,,a 
+cannon,58,Tools,,80,,Class default,,,,,2,"Using the CANNON which you created, You tried to break the fence. However, it was too loud, and the other soldiers notice you are running away. They catch you and you are sentenced to die. Game Over.",a 
+canoe,59,Ships,,100,,Class default,,,,,0,,a 
+car,60,Vehicles,,100,1,Class default,Do you really wanna drive this car? This will make this game boring.,,,,0,,a 
+carrot,61,Food Materials,,10,,Class default,,,,,0,,a 
+castle,62,Buildings,,200,,"Hey, don't abuse you power.",,,,,0,,a 
+cat,63,No Effect,,1,,You can only make new cat after you're married.,,,,,0,,a 
+ceiling fan,64,Electrical,,20,,"But, there's no ceiling.",,,,,0,,a 
+cell phone,65,Electrical,,10,,No signal.,,,,,0,,a 
+cello,66,Musical Instruments,,60,1,Class default,Playing music.,,,,0,,a 
+chair,67,Tools,,50,1,"You get a chair, you can sit on it if you want, but I tell you, it's actually a decent weapon.",,,,,0,,a 
+chandelier,68,Illumination,,20,,Class default,"If it's night, your surrounding is illuminated.",,,,0,,a 
+church,69,Buildings,,200,1,Class default,"No priest in this church, it's only a shelter. Do you wanna sleep here for today?",,,,0,,a 
+circle,70,Abstract,,0,,Class default,,,,,0,,a 
+clarinet,71,Musical Instruments,,50,1,Class default,Playing music.,,,,0,,a 
+clock,72,Tools,,1,1,Class default,The time is {time},,,,0,,a 
+cloud,73,Environmental,,30,,A small cloud is floating above you.,,,,,0,,a 
+coffee cup,74,Beverages,,10,,Class default,,15,,,0,,a 
+compass,75,Tools,,10,,Class default,,,,,0,,a 
+computer,76,Electrical,,30,,No internet connection.,,,,,0,,a 
+cookie,77,Foods,,10,,Class default,,10,,,0,,a 
+cooler,78,Tools,,40,,Class default,,,,,0,,a 
+couch,79,Furnitures,,50,1,Class default,Do you wanna sleep on this couch right now?,,,,0,,a 
+cow,80,Terrestrial Animals,,150,,Class default,,,,,0,,a 
+crab,81,Amphibians,,10,,Class default,,,,,0,,a 
+crayon,82,Tools,,5,,Class default,,,,,0,,a 
+crocodile,83,Amphibians,,30,1,Class default,The crocodile bits you and you are dead.,,,100,0,,a 
+crown,84,Jewelries,,5,,Class default,,,,,0,,a 
+cruise ship,85,Ships,,100,,Class default,,,,,0,,a 
+cup,86,Beverages,,10,,Class default,,15,,,0,,a 
+diamond,87,Jewelries,,5,,Class default,,,,,0,,a 
+dishwasher,88,Electrical,,50,,Class default,,,,,0,,a 
+diving board,89,Environmental,,30,,You installed a diving board. But is there a pool?,,,,,0,,a 
+dog,90,No Effect,,1,,"Dogs are residence in this world, it's illegal to spawn a dog.",,,,,0,,a 
+dolphin,91,Marine Animals,,100,,Class default,,,,,0,,a 
+donut,92,Foods,,10,,Class default,,10,,,0,,a 
+door,93,Furnitures,,100,,Class default,,,,,0,,a 
+dragon,94,Birds,,200,1,A dragon appears,The dragon attacks you and you're dead. Game over.,,,,0,,a 
+dresser,95,Furnitures,,40,,Class default,,,,,0,,a 
+drill,96,Tools,,10,,Class default,,,,,1,"Using the DRILL which you created, You cut the fence and leave the barrack, marching forward to you hometown. Enter Level 2.",a 
+duck,98,Terrestrial Animals,,30,,Class default,,,,,0,,a 
+dumbbell,99,Artifacts,,15,,Class default,,,,,0,,a 
+face,107,Body Parts,,20,,Class default,,,,,0,,a 
+fan,108,Tools,,30,,Class default,,,,,0,,a 
+feather,109,Artifacts,,20,,Class default,,,,,0,,a 
+fence,110,Environmental,,80,1,A fence appears,Your fence is blocking your way.,,,,0,,a 
+finger,111,Body Parts,,5,,Class default,,,,,0,,a 
+fire hydrant,112,Environmental,,50,,"You installed a fire hydrant on the ground. Nice, the fire fighters might need this someday.",,,,,0,,a 
+fireplace,113,Furnitures,,60,1,Class default,You feel warm now,,,,0,,a 
+firetruck,114,Vehicles,,100,,Class default,,,,,0,,a 
+fish,115,Marine Animals,,20,,Class default,,,,,0,,a 
+flamingo,116,Birds,,60,,Class default,,,,,0,,a 
+flashlight,117,Illumination,,10,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,,a 
+floor lamp,119,Illumination,,150,,Class default,"If it's night, your surrounding is illuminated.",,,,0,,a 
+flower,120,Plants,,30,,Class default,,,,,0,,a 
+flying saucer,121,Aviations,,300,1,"Look, UFO!","Look! An UFO! Then you are captured by ALIENS. Sorry mate, game over.",,,100,0,,a 
+foot,122,Body Parts,,10,,Class default,,,,,0,,a 
+fork,123,Tools,,10,,Class default,,,,,0,,a 
+frog,124,Amphibians,,10,,Class default,,,,,0,,a 
+frying pan,125,Tools,,30,,Class default,,,,,0,,a 
+garden,126,Environmental,,50,,You created a small beautiful garden.,,,,,0,,a 
+garden hose,127,Tools,,10,,Class default,,,,,0,,a 
+giraffe,128,Terrestrial Animals,,300,,Class default,,,,,0,,a 
+goatee,129,Body Parts,,5,,Class default,,,,,0,,a 
+golf club,130,Tools,,60,,Class default,,,,,0,,a 
+grass,132,Plants,,20,,Class default,,,,,0,,a 
+guitar,133,Musical Instruments,,50,1,Class default,Playing music.,,,,0,,a 
+hamburger,134,Foods,,10,,Class default,,20,,,0,,a 
+hammer,135,Tools,,30,,Class default,,,,,1,"Using the HAMMER which you created, You break the fence and leave the barrack, marching forward to you hometown. Enter Level 2.",a 
+hand,136,Body Parts,,5,,Class default,,,,,0,,a 
+harp,137,Musical Instruments,,80,1,Class default,Playing music.,,,,0,,a 
+hat,138,Clothes,,10,,Class default,,,,,0,,a 
+hedgehog,140,Terrestrial Animals,,20,,Class default,,,,,0,,a 
+helicopter,141,Aviations,,300,,You get a HELICOPTER but you don't know how to pilot.,,,,,0,,a 
+helmet,142,Clothes,,10,,Class default,,,,,0,,a 
+hexagon,143,Abstract,,0,,Class default,,,,,0,,a 
+hockey puck,144,Tools,,10,,Class default,,,,,0,,a 
+hockey stick,145,Tools,,60,,Class default,,,,,0,,a 
+horse,146,Terrestrial Animals,,150,1,Class default,You're riding a horse! Moving speed increased by 100%.,,,,0,,a 
+hospital,147,Buildings,,200,1,Class default,"Nobody works in this hospital, it's only a shelter. Do you wanna sleep here for today?",,,,0,,a 
+hot air balloon,148,Aviations,,300,1,Class default,"You are flying, end of the game.",,,,1,"Using the HOT AIR BALLOON which you created, you fly over the fence and keep flying to you home. Enter Level 3.",a 
+hot dog,149,Foods,,10,,Class default,,10,,,0,,a 
+hot tub,150,Furnitures,,40,,Class default,,,,,0,,a 
+house,152,Buildings,,200,1,Class default,"You get a shelter, do you wanna sleep here for today?",,,,0,,a 
+house plant,153,Plants,,30,,Class default,,,,,0,,a 
+hurricane,154,Weather,,300,1,"Look, a hurricane! It's dangerous!","Look, a hurricane! It's dangerous! Inevitably, you die from the hurricane.",,,,0,,a 
+jacket,156,Clothes,,40,,Class default,,,,,0,,a 
+jail,157,Buildings,,200,1,Class default,Next episode: Jailbreak.,,,,0,,a 
+kangaroo,158,Terrestrial Animals,,150,,Class default,,,,,0,,a 
+key,159,Tools,,5,,Class default,,,,,0,,a 
+keyboard,160,Musical Instruments,,30,1,Class default,Playing music.,,,,0,,a 
+knee,161,Body Parts,,5,,Class default,,,,,0,,a 
+ladder,162,Tools,,200,1,Class default,You can climb over something.,,,,1,"Using the LADDER which you created, you climb over the fence and running to your hometown. Enter Level 2.",a 
+lantern,163,Illumination,,30,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,,a 
+laptop,164,Electrical,,30,,No internet connection.,,,,,0,,a 
+leaf,165,Artifacts,,10,,Class default,,,,,0,,a 
+leg,166,Body Parts,,40,,Class default,,,,,0,,a 
+light bulb,167,Electrical,,10,1,"Amazing, this light bulb works without electricity. Oh I see, it's light bulb of idea.",You come up with a brilliant idea.,,,,0,,a 
+lighthouse,168,Illumination,,200,,Class default,"If it's night, your surrounding is illuminated.",,,,0,,a 
+lightning,169,Weather,,300,,"A lighting hits a tree in the distance, it's scare.",,,,,0,,a 
+line,170,Abstract,,0,,Class default,,,,,0,,a 
+lion,171,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,,a 
+lipstick,172,Tools,,5,,Class default,,,,,0,,a 
+lobster,173,Food Materials,,10,,Class default,,,,,0,,a 
+lollipop,174,Foods,,10,,Class default,,5,,,0,,a 
+mailbox,175,Tools,,50,,Class default,,,,,0,,a 
+map,176,Tools,,1,1,Class default,The map of this game will show.,,,,0,,a 
+marker,177,Tools,,5,,Class default,,,,,0,,a 
+megaphone,179,Tools,,10,,Class default,,,,,0,,a 
+mermaid,180,Marine Animals,,100,,Class default,,,,,0,,a 
+microphone,181,Electrical,,10,,You don't know how to use it.,,,,,0,,a 
+microwave,182,Electrical,,30,,Class default,,,,,0,,a 
+monkey,183,Terrestrial Animals,,40,,Class default,,,,,0,,a 
+moon,184,Environmental,,0,1,"Stop, you're abusing your power.",Added a moon in the sky. This is rediculous,,,,0,,a 
+mosquito,185,Insects,,5,1,"Annoying mosquito, go away!",You got bite and lost 1 HP. ,,,,0,,a 
+motorbike,186,Vehicles,,70,1,Class default,You're riding a chopper! Moving speed increased by 200%.,,,,0,,a 
+mountain,187,Environmental,,20,,You only got a beautiful picture of this mountain.,,,,,0,,a 
+mouse,188,Terrestrial Animals,,10,,Class default,,,,,0,,a 
+moustache,189,Body Parts,,5,,Class default,,,,,0,,a 
+mouth,190,Body Parts,,5,,Class default,,,,,0,,a 
+mug,191,Beverages,,10,,Class default,,15,,,0,,a 
+mushroom,192,Food Materials,,10,,Class default,,,,,0,,a 
+nail,193,Tools,,5,,Class default,,,,,0,,a 
+necklace,194,Jewelries,,5,,Class default,,,,,0,,a 
+nose,195,Body Parts,,5,,Class default,,,,,0,,a 
+paint can,202,Tools,,5,,Class default,,,,,0,,a 
+paintbrush,203,Tools,,5,,Class default,,,,,0,,a 
+palm tree,204,Plants,,200,1,Class default,"You feel chill under the tree. Caution: if there is lighting, you will get hit.",,,,0,,a 
+panda,205,Terrestrial Animals,,100,,Class default,,,,,0,,a 
+pants,206,Clothes,,40,,Class default,,,,,0,,a 
+paper clip,207,Tools,,5,,Class default,,,,,0,,a 
+parachute,208,Tools,,30,1,Class default,"If you are near a cliff, you can jump down safely.",,,,0,,a 
+parrot,209,Birds,,30,,Class default,,,,,0,,a 
+passport,210,Artifacts,,10,,Class default,,,,,0,,a 
+peanut,211,Foods,,10,,Class default,,10,,,0,,a 
+pear,212,Foods,,10,,Class default,,10,,,0,,a 
+pencil,214,Tools,,5,,Class default,,,,,0,,a 
+penguin,215,Amphibians,,60,,Class default,,,,,0,,a 
+piano,216,Musical Instruments,,50,1,Class default,Playing music.,,,,0,,a 
+pickup truck,217,Vehicles,,120,1,Class default,Do you really wanna drive this car? This will make this game boring.,,,,0,,a 
+picture frame,218,Artifacts,,60,,Class default,,,,,0,,a 
+pig,219,Terrestrial Animals,,100,,Class default,,,,,0,,a 
+pillow,220,Furnitures,,20,,Class default,,,,,0,,a 
+pineapple,221,Foods,,15,,Class default,,10,,,0,,a 
+pizza,222,Foods,,10,,Class default,,30,,,0,,a 
+police car,224,Vehicles,,100,1,Class default,You're a deserter and the police caught you. Next level: Jail break.,,,,0,,a 
+pond,225,Environmental,,30,1,Wow!,"A pond, ok. Now let's install a diving board.",,,,0,,a 
+pool,226,Environmental,,30,1,Wow!,"A pool, ok. Now let's install a diving board.",,,,0,,a 
+popsicle,227,Foods,,10,,Class default,,10,,,0,,a 
+postcard,228,Artifacts,,20,,Class default,,,,,0,,a 
+potato,229,Food Materials,,10,,Class default,,,,,0,,a 
+power outlet,230,Electrical,,10,1,Class default,You can use electrical facilities now.,,,,0,,a 
+purse,231,Artifacts,,10,,Class default,,,,,0,,a 
+rabbit,232,Terrestrial Animals,,30,,Class default,,,,,0,,a 
+raccoon,233,Terrestrial Animals,,30,,Class default,,,,,0,,a 
+radio,234,Electrical,,20,,Class default,,,,,0,,a 
+rain,235,Weather,,1,1,It's raining now. Do you have a umbralla?,,,,,0,,a 
+rainbow,236,Weather,,200,1,Class default,"A beautiful rainbow occurs, the only colorful thing in this game.",,,,0,,a 
+rake,237,Tools,,50,,Class default,,,,,0,,a 
+remote control,238,Electrical,,10,,"A remote control, seems the only usage is throwing toward enemies.",,,,,0,,a 
+rhinoceros,239,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,1,"The RHINOCEROS breaks the fence, which allows you leaving the barrack, running forward to you hometown. ",a 
+river,240,Environmental,,30,1,Wow!,"Hmm, a river, I don't know what to do with it.",,,,0,,a 
+roller coaster,241,Environmental,,20,,You only got a beautiful picture of this roller coaster. Now you wish you can go to Disney land.,,,,,0,,a 
+sailboat,243,Ships,,100,,Class default,,,,,0,,a 
+sandwich,244,Foods,,10,,Class default,,10,,,0,,a 
+saw,245,Tools,,30,,Class default,,,,,1,"Using the SAW which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a 
+saxophone,246,Musical Instruments,,40,1,Class default,Playing music.,,,,0,,a 
+school bus,247,Vehicles,,100,,Class default,,,,,0,,a 
+scorpion,249,Insects,,5,1,Class default,You got bite and lost 20 HP.,,,,0,,a 
+screwdriver,250,Tools,,10,,Class default,,,,,0,,a 
+sea turtle,251,Amphibians,,30,,Class default,,,,,0,,a 
+see saw,252,Environmental,,50,,"You created a see saw, but it needs two people to play.",,,,,0,,a 
+shark,253,Marine Animals,,100,,Class default,,,,,0,,a 
+sheep,254,Terrestrial Animals,,50,,Class default,,,,,0,,a 
+shoe,255,Clothes,,10,,Class default,,,,,0,,a 
+shorts,256,Clothes,,10,,Class default,,,,,0,,a 
+shovel,257,Tools,,50,,Class default,,,,,1,"Using the SHOVEL which you created, You dig a hole and climb to the other side of the fence, running forward to you hometown. Enter Level 2.",a 
+sink,258,Furnitures,,30,,Class default,,,,,0,,a 
+skateboard,259,Vehicles,,20,,Class default,,,,,0,,a 
+skull,260,Artifacts,,20,,Class default,,,,,0,,a 
+skyscraper,261,Buildings,,200,,"Hey, don't abuse you power.",,,,,0,,a 
+sleeping bag,262,Furnitures,,30,1,Class default,Do you wanna sleep in this sleeping bag right now?,,,,2,"You slept in the SLEEPING BAG near the fence. However, they found your deserting the next morning and captured you. Game Over.",a 
+smiley face,263,No Effect,,1,,Class default,,,,,0,,a 
+snail,264,Insects,,5,,Class default,,,,,0,,a 
+snake,265,Terrestrial Animals,,30,1,Class default,It attacks you and you are dead. Game over.,,,,0,,a 
+snorkel,266,Tools,,5,,Class default,,,,,0,,a 
+snowflake,267,Weather,,1,,It's snowing and so cold now.,,,,,0,,a 
+snowman,268,Environmental,,60,,You created a snowman.,,,,,0,,a 
+soccer ball,269,Artifacts,,30,,Class default,,,,,0,,a 
+sock,270,Clothes,,20,,Class default,,,,,0,,a 
+speedboat,271,Ships,,100,,Class default,,,,,0,,a 
+spider,272,Insects,,5,,Class default,,,,,0,,a 
+spoon,273,Tools,,10,,Class default,,,,,0,,a 
+spreadsheet,274,Abstract,,0,,Class default,,,,,0,,a 
+square,275,Abstract,,0,,Class default,,,,,0,,a 
+squiggle,276,Abstract,,0,,Class default,,,,,0,,a 
+squirrel,277,Terrestrial Animals,,20,,Class default,,,,,0,,a 
+star,279,Environmental,,10,1,"A star fragment, maybe it can make a good jewelry.",Added one star in the sky.,,,,0,,a 
+steak,280,Foods,,10,,Class default,,10,,,0,,a 
+stereo,281,Electrical,,30,,Class default,,,,,0,,a 
+stethoscope,282,Tools,,30,,Class default,,,,,0,,a 
+stitches,283,No Effect,,1,,Class default,,,,,0,,a 
+stop sign,284,Environmental,,100,,A stop sign in the middle of nowhere.,,,,,0,,a 
+stove,285,Furnitures,,40,,Class default,,,,,0,,a 
+strawberry,286,Foods,,10,,Class default,,10,,,0,,a 
+streetlight,287,Illumination,,200,,Class default,"If it's night, your surrounding is illuminated.",,,,0,,a 
+string bean,288,Food Materials,,10,,Class default,,,,,0,,a 
+submarine,289,Ships,,100,,Class default,,,,,0,,a 
+suitcase,290,Tools,,40,,Class default,,,,,0,,a 
+sun,291,Environmental,,20,,"You draw a sun, but nothing happens.",,,,,0,,a 
+swan,292,Birds,,60,,Class default,,,,,0,,a 
+sweater,293,Clothes,,30,,Class default,,,,,0,,a 
+swing set,294,Environmental,,200,,A swing set in the middle of nowhere.,,,,,0,,a 
+sword,295,Tools,,60,,Class default,,,,,1,"Using the SWORD which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a 
+t-shirt,296,Clothes,,30,,Class default,,,,,0,,a 
+table,297,Furnitures,,40,,Class default,,,,,0,,a 
+teapot,298,Beverages,,10,,Class default,,15,,,0,,a 
+teddy-bear,299,Artifacts,,30,,Class default,,,,,0,,a 
+telephone,300,Electrical,,20,,No carrier.,,,,,0,,a 
+television,301,Electrical,,40,,"Do you have electricity? Anyway, there's no signal.",,,,,0,,a 
+tennis racquet,302,Tools,,40,,Class default,,,,,0,,a 
+tent,303,Furnitures,,150,1,Class default,Do you wanna sleep in this tent right now?,,,,0,,a 
+The Eiffel Tower,304,Artifacts,,10,,You get a magnet souvenir of Eiffel Tower.,,,,,0,,a 
+The Great Wall of China,305,Artifacts,,10,,You get a magnet souvenir of The Great Wall.,,,,,0,,a 
+The Mona Lisa,306,Artifacts,,60,,Class default,,,,,0,,a 
+tiger,307,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,,a 
+toaster,308,Furnitures,,20,,Class default,,,,,0,,a 
+toe,309,Body Parts,,5,,Class default,,,,,0,,a 
+toilet,310,Furnitures,,40,,Class default,,,,,0,,a 
+tooth,311,Body Parts,,5,,Class default,,,,,0,,a 
+toothbrush,312,Tools,,10,,Class default,,,,,0,,a 
+toothpaste,313,Tools,,10,,Class default,,,,,0,,a 
+tornado,314,Weather,,300,1,"Look, a hurricane! It's dangerous!","Look, a hurricane! It's dangerous! Inevitably, you die from the hurricane.",,,,0,,a 
+tractor,315,Vehicles,,100,,Class default,,,,,0,,a 
+traffic light,316,Environmental,,50,,A traffic light in the middle of nowhere.,,,,,0,,a 
+train,317,Vehicles,,100,,Class default,,,,,0,,a 
+tree,318,Plants,,200,1,Class default,"You feel chill under the tree. Caution: if there is lighting, you will get hit.",,,,0,,a 
+triangle,319,Abstract,,0,,Class default,,,,,0,,a 
+trombone,320,Musical Instruments,,40,1,Class default,Playing music.,,,,0,,a 
+truck,321,Vehicles,,100,,Class default,,,,,0,,a 
+trumpet,322,Musical Instruments,,40,1,Class default,Playing music.,,,,0,,a 
+van,325,Vehicles,,100,,Class default,,,,,0,,a 
+vase,326,Artifacts,,40,,Class default,,,,,0,,a 
+violin,327,Musical Instruments,,30,1,Class default,Playing music.,,,,0,,a 
+washing machine,328,Electrical,,30,,Class default,,,,,0,,a 
+watermelon,329,Foods,,20,,Class default,,20,,,0,,a 
+waterslide,330,Environmental,,200,,A waterslide in the middle of nowhere.,,,,,0,,a 
+whale,331,Marine Animals,,100,,Class default,,,,,0,,a 
+wheel,332,Tools,,20,,Class default,,,,,0,,a 
+windmill,333,Buildings,,200,1,Class default,"Nobody works in this windmill, it's only a shelter. Do you wanna sleep here for today?",,,,0,,a 
+wine bottle,334,Beverages,,10,1,Class default,"You drink the wine and you feel dizzy, need to sleep.",10,,,0,,a 
+wine glass,335,Beverages,,20,1,Class default,"You drink the wine and you feel dizzy, need to sleep.",10,,,0,,a 
+wristwatch,336,Tools,,5,,Class default,,,,,0,,a 
+yoga,337,No Effect,,1,,Class default,,,,,0,,a 
+zebra,338,Terrestrial Animals,,150,,Class default,,,,,0,,a 
+zigzag,339,Abstract,,0,,Class default,,,,,0,,a 
+eyeglasses,106,Tools,,10,,Class default,,,,,0,,a pair of 
+binoculars,29,Tools,,20,1,Class default,The screen should zoom in.,,,,0,,a pair of 
+pliers,223,Tools,,20,,Class default,,,,,1,"Using the PLIERS which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a pair of 
+drums,97,Musical Instruments,,40,1,Class default,Playing music.,,,,0,,a set of 
+airplane,0,Aviations,,300,,You get an AIRPLANE but you don't know how to pilot.,,,,,0,,an 
+alarm clock,1,Tools,,1,1,Class default,I've no idea what should happen.,,,,0,,an 
+ambulance,2,Vehicles,,100,,Class default,,,,,0,,an 
+angel,3,Birds,,80,1,An angel come down from heaven,"You are blessed by the angel, keep going maybe you can find fortune.",,,,0,,an 
+animal migration,4,No Effect,,1,,Class default,,,,,0,,an 
+ant,5,Insects,,5,,Class default,,,,,0,,an 
+anvil,6,Tools,,20,,Class default,,,,,0,,an 
+apple,7,Foods,,10,,Class default,,10,,,0,,an 
+arm,8,Body Parts,,40,,Class default,,,,,0,,an 
+asparagus,9,Foods,,10,,Class default,,10,,,0,,an 
+axe,10,Tools,,50,,Class default,,,,,1,"Using the AXE which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",an 
+ear,100,Body Parts,,5,,Class default,,,,,0,,an 
+elbow,101,Body Parts,,20,,Class default,,,,,0,,an 
+elephant,102,Terrestrial Animals,,200,,Class default,,,,,0,,an 
+envelope,103,Artifacts,,20,,Class default,,,,,0,,an 
+eraser,104,Tools,,5,,Class default,,,,,0,,an 
+eye,105,Body Parts,,5,,Class default,,,,,0,,an 
+hourglass,151,Tools,,10,,Class default,,,,,0,,an 
+ice cream,155,Foods,,10,1,Class default,You feel chill now.,20,,,0,,an 
+ocean,196,Environmental,,20,,You only got a beautiful picture of this ocean.,,,,,0,,an 
+octagon,197,Abstract,,0,,Class default,,,,,0,,an 
+octopus,198,Marine Animals,,20,,Class default,,,,,0,,an 
+onion,199,Food Materials,,10,,Class default,,,,,0,,an 
+oven,200,Furnitures,,40,,Class default,,,,,0,,an 
+owl,201,Birds,,30,,Class default,,,,,0,,an 
+umbrella,323,Tools,,40,1,Class default,"If it's raining, this can save your day.",,,,0,,an 
+underwear,324,Clothes,,10,,Class default,,,,,0,,an 
+grapes,131,Foods,,10,,Class default,,10,,,0,,some 
+matches,178,Tools,,1,1,Class default,"You see your grandma, your fami... and it gone.",,,,0,,some 
+peas,213,Foods,,10,,Class default,,10,,,0,,some 
