@@ -2,8 +2,7 @@ Name,Id,Tag1,Tag2,SizeH,Special,Story,SpecialStory,RecoverHP,Attack,DemageToPlay
 flip flops,118,Clothes,,5,,Class default,,,,,0,,a pair of 
 headphones,139,Electrical,,10,1,You get a headphone.,Playing music,,,,0,,a pair of 
 rollerskates,242,Vehicles,,20,,Class default,,,,,0,,a pair of 
-scissors,248,Tools,,10,,Class default,,,,,0,,a pair of 
-staircase,278,Tools,,100,,Class default,,,,,1,"Using the STAIRS which you created, you climb over the fence and running to your hometown. Enter Level 2.",a
+scissors,248,Tools,,10,,Class default,,,,,3,"I can’t cut the fence by this scissor, it’s too weak.",a pair of 
 backpack,11,Tools,,30,,Class default,,,,,0,,a 
 banana,12,Foods,,10,,Class default,,10,,,0,,a 
 bandage,13,Tools,,10,,Class default,,,,,0,,a 
@@ -15,10 +14,10 @@ basketball,18,Artifacts,,30,,Class default,,,,,0,,a
 bat,19,Tools,,60,,Class default,,,,,0,,a 
 bathtub,20,Furnitures,,40,,Class default,,,,,0,,a 
 beach,21,Environmental,,20,,You only got a beautiful picture of this beach.,,,,,0,,a 
-bear,22,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,0,,a 
+bear,22,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,100,0,,a 
 beard,23,Body Parts,,5,,Class default,,,,,0,,a 
 bed,24,Furnitures,,50,1,Class default,Do you wanna sleep on this bed right now?,,,,0,,a 
-bee,25,Insects,,5,,Class default,,,,,0,,a 
+bee,25,Insects,,5,1,Class default,You get stung by the bee. \n HP - 10.,,,10,0,,a 
 belt,26,Clothes,,5,,Class default,,,,,0,,a 
 bench,27,Furnitures,,30,,Class default,,,,,0,,a 
 bicycle,28,Vehicles,,60,1,Class default,You're cycling! Moving speed increased by 100%.,,,,0,,a 
@@ -37,7 +36,6 @@ bridge,41,Environmental,,200,1,"A bridge, how can I use it?","If near water, you
 broccoli,42,Food Materials,,10,,Class default,,,,,0,,a 
 broom,43,Tools,,60,,Class default,,,,,0,,a 
 bucket,44,Tools,,30,,Class default,,,,,0,,a 
-bulldozer,45,Vehicles,,100,,Class default,,,,,2,"You tried to break the fence with the BULLDOZER. However, it was too loud, and the other soldiers noticed you are running away. They caught you and now you are sentenced to die. Game Over.",a 
 bus,46,Vehicles,,100,,Class default,,,,,0,,a 
 bush,47,Environmental,,30,,A beautiful bush grows on the ground.,,,,,0,,a 
 butterfly,48,Insects,,5,,Class default,,,,,0,,a 
@@ -48,9 +46,8 @@ calendar,52,Tools,,1,1,Class default,Today is {data},,,,0,,a
 camel,53,Terrestrial Animals,,150,1,Class default,"You're riding a camel! Moving speed increased by 50%, and you are able to ride it in the desert!",,,,0,,a 
 camera,54,Tools,,1,1,Class default,The game will take a screenshot.,,,,0,,a 
 camouflage,55,No Effect,,1,,Class default,,,,,0,,a 
-campfire,56,Environmental,,40,1,You start a campfire.,You feel warm now.,,,,0,,a 
+campfire,56,Environmental,,40,1,You start a campfire.,You start a campfire. You feel warm now.,,,,0,,a 
 candle,57,Illumination,,10,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,,a 
-cannon,58,Tools,,80,,Class default,,,,,2,"Using the CANNON which you created, You tried to break the fence. However, it was too loud, and the other soldiers notice you are running away. They catch you and you are sentenced to die. Game Over.",a 
 canoe,59,Ships,,100,,Class default,,,,,0,,a 
 car,60,Vehicles,,100,1,Class default,Do you really wanna drive this car? This will make this game boring.,,,,0,,a 
 carrot,61,Food Materials,,10,,Class default,,,,,0,,a 
@@ -88,7 +85,6 @@ donut,92,Foods,,10,,Class default,,10,,,0,,a
 door,93,Furnitures,,100,,Class default,,,,,0,,a 
 dragon,94,Birds,,200,1,A dragon appears,The dragon attacks you and you're dead. Game over.,,,,0,,a 
 dresser,95,Furnitures,,40,,Class default,,,,,0,,a 
-drill,96,Tools,,10,,Class default,,,,,1,"Using the DRILL which you created, You cut the fence and leave the barrack, marching forward to you hometown. Enter Level 2.",a 
 duck,98,Terrestrial Animals,,30,,Class default,,,,,0,,a 
 dumbbell,99,Artifacts,,15,,Class default,,,,,0,,a 
 face,107,Body Parts,,20,,Class default,,,,,0,,a 
@@ -117,7 +113,6 @@ golf club,130,Tools,,60,,Class default,,,,,0,,a
 grass,132,Plants,,20,,Class default,,,,,0,,a 
 guitar,133,Musical Instruments,,50,1,Class default,Playing music.,,,,0,,a 
 hamburger,134,Foods,,10,,Class default,,20,,,0,,a 
-hammer,135,Tools,,30,,Class default,,,,,1,"Using the HAMMER which you created, You break the fence and leave the barrack, marching forward to you hometown. Enter Level 2.",a 
 hand,136,Body Parts,,5,,Class default,,,,,0,,a 
 harp,137,Musical Instruments,,80,1,Class default,Playing music.,,,,0,,a 
 hat,138,Clothes,,10,,Class default,,,,,0,,a 
@@ -129,7 +124,6 @@ hockey puck,144,Tools,,10,,Class default,,,,,0,,a
 hockey stick,145,Tools,,60,,Class default,,,,,0,,a 
 horse,146,Terrestrial Animals,,150,1,Class default,You're riding a horse! Moving speed increased by 100%.,,,,0,,a 
 hospital,147,Buildings,,200,1,Class default,"Nobody works in this hospital, it's only a shelter. Do you wanna sleep here for today?",,,,0,,a 
-hot air balloon,148,Aviations,,300,1,Class default,"You are flying, end of the game.",,,,1,"Using the HOT AIR BALLOON which you created, you fly over the fence and keep flying to you home. Enter Level 3.",a 
 hot dog,149,Foods,,10,,Class default,,10,,,0,,a 
 hot tub,150,Furnitures,,40,,Class default,,,,,0,,a 
 house,152,Buildings,,200,1,Class default,"You get a shelter, do you wanna sleep here for today?",,,,0,,a 
@@ -141,7 +135,6 @@ kangaroo,158,Terrestrial Animals,,150,,Class default,,,,,0,,a
 key,159,Tools,,5,,Class default,,,,,0,,a 
 keyboard,160,Musical Instruments,,30,1,Class default,Playing music.,,,,0,,a 
 knee,161,Body Parts,,5,,Class default,,,,,0,,a 
-ladder,162,Tools,,200,1,Class default,You can climb over something.,,,,1,"Using the LADDER which you created, you climb over the fence and running to your hometown. Enter Level 2.",a 
 lantern,163,Illumination,,30,,Class default,"If it's night, your surrounding is illuminated. And the light source follows you.",,,,0,,a 
 laptop,164,Electrical,,30,,No internet connection.,,,,,0,,a 
 leaf,165,Artifacts,,10,,Class default,,,,,0,,a 
@@ -209,12 +202,10 @@ rain,235,Weather,,1,1,It's raining now. Do you have a umbralla?,,,,,0,,a
 rainbow,236,Weather,,200,1,Class default,"A beautiful rainbow occurs, the only colorful thing in this game.",,,,0,,a 
 rake,237,Tools,,50,,Class default,,,,,0,,a 
 remote control,238,Electrical,,10,,"A remote control, seems the only usage is throwing toward enemies.",,,,,0,,a 
-rhinoceros,239,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,1,"The RHINOCEROS breaks the fence, which allows you leaving the barrack, running forward to you hometown. ",a 
 river,240,Environmental,,30,1,Wow!,"Hmm, a river, I don't know what to do with it.",,,,0,,a 
 roller coaster,241,Environmental,,20,,You only got a beautiful picture of this roller coaster. Now you wish you can go to Disney land.,,,,,0,,a 
 sailboat,243,Ships,,100,,Class default,,,,,0,,a 
 sandwich,244,Foods,,10,,Class default,,10,,,0,,a 
-saw,245,Tools,,30,,Class default,,,,,1,"Using the SAW which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a 
 saxophone,246,Musical Instruments,,40,1,Class default,Playing music.,,,,0,,a 
 school bus,247,Vehicles,,100,,Class default,,,,,0,,a 
 scorpion,249,Insects,,5,1,Class default,You got bite and lost 20 HP.,,,,0,,a 
@@ -225,12 +216,10 @@ shark,253,Marine Animals,,100,,Class default,,,,,0,,a
 sheep,254,Terrestrial Animals,,50,,Class default,,,,,0,,a 
 shoe,255,Clothes,,10,,Class default,,,,,0,,a 
 shorts,256,Clothes,,10,,Class default,,,,,0,,a 
-shovel,257,Tools,,50,,Class default,,,,,1,"Using the SHOVEL which you created, You dig a hole and climb to the other side of the fence, running forward to you hometown. Enter Level 2.",a 
 sink,258,Furnitures,,30,,Class default,,,,,0,,a 
 skateboard,259,Vehicles,,20,,Class default,,,,,0,,a 
 skull,260,Artifacts,,20,,Class default,,,,,0,,a 
 skyscraper,261,Buildings,,200,,"Hey, don't abuse you power.",,,,,0,,a 
-sleeping bag,262,Furnitures,,30,1,Class default,Do you wanna sleep in this sleeping bag right now?,,,,2,"You slept in the SLEEPING BAG near the fence. However, they found your deserting the next morning and captured you. Game Over.",a 
 smiley face,263,No Effect,,1,,Class default,,,,,0,,a 
 snail,264,Insects,,5,,Class default,,,,,0,,a 
 snake,265,Terrestrial Animals,,30,1,Class default,It attacks you and you are dead. Game over.,,,,0,,a 
@@ -262,7 +251,6 @@ sun,291,Environmental,,20,,"You draw a sun, but nothing happens.",,,,,0,,a
 swan,292,Birds,,60,,Class default,,,,,0,,a 
 sweater,293,Clothes,,30,,Class default,,,,,0,,a 
 swing set,294,Environmental,,200,,A swing set in the middle of nowhere.,,,,,0,,a 
-sword,295,Tools,,60,,Class default,,,,,1,"Using the SWORD which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a 
 t-shirt,296,Clothes,,30,,Class default,,,,,0,,a 
 table,297,Furnitures,,40,,Class default,,,,,0,,a 
 teapot,298,Beverages,,10,,Class default,,15,,,0,,a 
@@ -307,7 +295,6 @@ zebra,338,Terrestrial Animals,,150,,Class default,,,,,0,,a
 zigzag,339,Abstract,,0,,Class default,,,,,0,,a 
 eyeglasses,106,Tools,,10,,Class default,,,,,0,,a pair of 
 binoculars,29,Tools,,20,1,Class default,The screen should zoom in.,,,,0,,a pair of 
-pliers,223,Tools,,20,,Class default,,,,,1,"Using the PLIERS which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a pair of 
 drums,97,Musical Instruments,,40,1,Class default,Playing music.,,,,0,,a set of 
 airplane,0,Aviations,,300,,You get an AIRPLANE but you don't know how to pilot.,,,,,0,,an 
 alarm clock,1,Tools,,1,1,Class default,I've no idea what should happen.,,,,0,,an 
@@ -319,7 +306,6 @@ anvil,6,Tools,,20,,Class default,,,,,0,,an
 apple,7,Foods,,10,,Class default,,10,,,0,,an 
 arm,8,Body Parts,,40,,Class default,,,,,0,,an 
 asparagus,9,Foods,,10,,Class default,,10,,,0,,an 
-axe,10,Tools,,50,,Class default,,,,,1,"Using the AXE which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",an 
 ear,100,Body Parts,,5,,Class default,,,,,0,,an 
 elbow,101,Body Parts,,20,,Class default,,,,,0,,an 
 elephant,102,Terrestrial Animals,,200,,Class default,,,,,0,,an 
@@ -339,3 +325,17 @@ underwear,324,Clothes,,10,,Class default,,,,,0,,an
 grapes,131,Foods,,10,,Class default,,10,,,0,,some 
 matches,178,Tools,,1,1,Class default,"You see your grandma, your fami... and it gone.",,,,0,,some 
 peas,213,Foods,,10,,Class default,,10,,,0,,some 
+staircase,278,Tools,,100,,Class default,,,,,1,"Using the STAIRS which you created, you climb over the fence and running to your hometown. Enter Level 2.",a
+drill,96,Tools,,10,,Class default,,,,,1,"Using the DRILL which you created, You cut the fence and leave the barrack, marching forward to you hometown. Enter Level 2.",a 
+hammer,135,Tools,,30,,Class default,,,,,1,"Using the HAMMER which you created, You break the fence and leave the barrack, marching forward to you hometown. Enter Level 2.",a 
+hot air balloon,148,Aviations,,300,1,Class default,"You are flying, end of the game.",,,,1,"Using the HOT AIR BALLOON which you created, you fly over the fence and keep flying to you home. Enter Level 3.",a 
+ladder,162,Tools,,200,1,Class default,You can climb over something.,,,,1,"Using the LADDER which you created, you climb over the fence and running to your hometown. Enter Level 2.",a 
+rhinoceros,239,Terrestrial Animals,,150,1,Class default,It attacks you and you are dead. Game over.,,,,1,"The RHINOCEROS breaks the fence, which allows you leaving the barrack, running forward to you hometown. ",a 
+saw,245,Tools,,30,,Class default,,,,,1,"Using the SAW which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a 
+shovel,257,Tools,,50,,Class default,,,,,1,"Using the SHOVEL which you created, You dig a hole and climb to the other side of the fence, running forward to you hometown. Enter Level 2.",a 
+sword,295,Tools,,60,,Class default,,,,,1,"Using the SWORD which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a 
+pliers,223,Tools,,20,,Class default,,,,,1,"Using the PLIERS which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",a pair of 
+axe,10,Tools,,50,,Class default,,,,,1,"Using the AXE which you created, You cut the fence and leave the barrack, running forward to you hometown. Enter Level 2.",an 
+bulldozer,45,Vehicles,,100,,Class default,,,,,2,"You tried to break the fence with the BULLDOZER. However, it was too loud, and the other soldiers noticed you are running away. They caught you and now you are sentenced to die. Game Over.",a 
+cannon,58,Tools,,80,,Class default,,,,,2,"Using the CANNON which you created, You tried to break the fence. However, it was too loud, and the other soldiers notice you are running away. They catch you and you are sentenced to die. Game Over.",a 
+sleeping bag,262,Furnitures,,30,1,Class default,Do you wanna sleep in this sleeping bag right now?,,,,2,"You slept in the SLEEPING BAG near the fence. However, they found your deserting the next morning and captured you. Game Over.",a 
