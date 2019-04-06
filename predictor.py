@@ -6,6 +6,7 @@ import datetime as dt
 import cv2
 import base64
 import io
+from imgUtil import *
 from PIL import Image
 import pandas as pd
 import numpy as np
@@ -105,54 +106,3 @@ def prepareImageAndPredict(model, cv2ImageData,size=64):
     except Exception as e:
         print(e)
         pass
-
-def stringToRGB(base64_string):
-    imgdata = base64.b64decode(str(base64_string))
-    image = Image.open(io.BytesIO(imgdata))
-    return cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
-
-def prepareImage(im):
-    #gray
-    im = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
-    #binary
-    thresh = 127
-    im = cv2.threshold(im, thresh, 255, cv2.THRESH_BINARY)[1]
-    # see if need to invert
-    n_white_pix = np.sum(im == 255)
-    n_black_pix = np.sum(im == 0)
-    if n_white_pix > n_black_pix:
-        im = cv2.bitwise_not(im)
-    #trim1, move content to the left-up corner;
-    size = len(im[0])
-    sum0 = im.sum(axis = 0)
-    sum1 = im.sum(axis = 1)
-    for i in range(len(sum0)):
-        if sum0[i] == 0:
-            im = np.delete(im, 0, 1)
-            zero = np.zeros((size,1))
-            im = np.append(im,zero,1)
-        else :
-            break
-    for i in range(len(sum1)):
-        if sum1[i] == 0:
-            im = np.delete(im, 0, 0)
-            zero = np.zeros((1,size))
-            im = np.append(im,zero,0)
-        else :
-            break
-    # trim2 crop content
-    sum3 = im.sum(axis = 0)
-    sum4 = im.sum(axis = 1)
-    x2 = 1
-    y2 = 1
-    while x2 < len(sum3) and sum3[-x2] ==0:
-        x2 += 1
-    while y2 < len(sum4) and sum4[-y2] ==0:
-        y2 += 1
-    w = size - x2
-    h = size - y2
-    contentSize = w if w > h  else  h
-    # only crop if there is realy content
-    if contentSize > 16:
-        im = im[0:contentSize, 0:contentSize]
-    return im

@@ -1,6 +1,7 @@
-from flask import Flask , jsonify, request, render_template, send_from_directory
+from flask import Flask , jsonify, request, send_file, render_template, send_from_directory
 from flask_cors import CORS
 from predictor import *
+from imgUtil import *
 import random
 import json
 import pandas as pd
@@ -9,7 +10,6 @@ import csv
 from tensorflow.keras import models
 import time
 import datetime
-
 import cv2
 import sys, getopt
 import os
@@ -54,6 +54,7 @@ def parseArgs(argv):
 pathToCert = "/etc/letsencrypt/live/point99.xyz/cert.pem"
 pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
 pathToItemData = "./data/ItemsAndTags.csv"
+pathToSprites = "./doodleSprites/"
 
 @app.route("/api/getItemData", methods=["GET"])
 def getItemDataAPI():
@@ -84,6 +85,35 @@ def predictAPI():
     print("this is the response: ", response['prediction']['names'])
     cv2.imwrite("./doodleHistory/"+ ', '.join(response['prediction']['names']) +", "+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".jpg", image_raw)
     return jsonify(response)
+
+@app.route("/api/askForSprite", methods=["POST"])
+def processSprite():
+    global model, graph
+    image_raw = stringToRGB(request.form.to_dict()["data"])
+    image = prepareImage(image_raw)
+    res = {'fileName':''}
+    prediction = {'prediction':{
+    'numbers':[],
+    'names':[]
+    }}
+    with sess.as_default():
+        with graph.as_default():
+            prediction['prediction']['numbers'] = prepareImageAndPredict(model, image).tolist()
+    for i in range(len(prediction['prediction']['numbers'])):
+        prediction['prediction']['names'].append(categories[prediction['prediction']['numbers'][i]])
+    rgba = getRGBAimg(image_raw)
+    fileName = ', '.join(prediction['prediction']['names']) +", "+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y") +".png"
+    print("this is the fileName: ", fileName)
+    cv2.imwrite(pathToSprites+ fileName, rgba)
+    res['fileName'] = fileName
+    return jsonify(res)
+
+@app.route("/api/downloadSprite", methods=["GET"])
+def returnSprite():
+    print(request.values['fileName'])
+    filePath = pathToSprites + request.values['fileName']
+    return send_file(filePath, mimetype='image/png')
+
 
 @app.route("/api/test", methods=["GET"])
 def testServer():
