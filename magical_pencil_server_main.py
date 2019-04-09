@@ -55,7 +55,7 @@ pathToCert = "/etc/letsencrypt/live/point99.xyz/cert.pem"
 pathToKey = "/etc/letsencrypt/live/point99.xyz/privkey.pem"
 pathToItemData = "./data/ItemsAndTags.csv"
 pathToSprites = "./doodleSprites/"
-
+pathToPuzzleData = "./data/PuzzleAndSolvers_"
 @app.route("/api/getItemData", methods=["GET"])
 def getItemDataAPI():
     r = {"items": []}
@@ -64,6 +64,19 @@ def getItemDataAPI():
         for row in reader:
             r["items"].append(row)
             r["items"].sort(key = lambda e: int(e["Id"]) )
+    return jsonify(r)
+
+@app.route("/api/getPuzzleData", methods=["GET"])
+def getPuzzleDataAPI():
+    id = request.values['id']
+    path = pathToPuzzleData + str(id) +".csv"
+    r = {"Id": id, "Solvers":[]}
+    with open(path) as csvData:
+        reader = csv.DictReader(csvData)
+        for row in reader:
+            if row["Result"] is not "":
+                r["Solvers"].append(row)
+                r["Solvers"].sort(key = lambda e: int(e["Id"]) )
     return jsonify(r)
 
 @app.route("/api/doodlePredict", methods=["POST"])
