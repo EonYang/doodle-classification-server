@@ -127,5 +127,9 @@ def getRGBAimg(img):
     # cut empty part
     x1,y1,x2,y2 = getXYWH(bw)
     rgba = rgba[y1:y2, x1:x2]
+
+    h = rgba.shape[0]
+    fy = 480 / h
+    rgba = cv2.resize(rgba, None, fx = fy, fy = fy)
     rgba = cv2.threshold(rgba, 127, 255, cv2.THRESH_BINARY)[1]
     return rgba
