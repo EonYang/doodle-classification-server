@@ -259,7 +259,7 @@ pliers,223,a pair of ,,Tools,,20,,,Nothing to cut now.,I can cut things with th
 shovel,257,a ,,Tools,,50,,,Dig,"Cool weapon, and it also can dig.",,,,,1,Dig,Dig,,,,30,
 toothpaste,313,a ,,Tools,,10,,,Oh no! I ate it! That tastes terrible!,Keeping clean is important in the wild.,,,,,1,Eat,Eat,,1,-10,,
 bandage,13,a ,,Tools,,10,,,Use,First aid tool.,,,,,1,Use,Eat,,1,60,,
-wheel,332,a ,,Tools,,20,,,Kick,,,,,,,Kick,Kick,,5,,30,
+wheel,332,a ,,Tools,,20,,,Kick,,,,Kick,Kick,,,,,5,,30,
 matches,178,some ,,Tools,,1,,These matches remind me a story.,"You see your grandma, your fami... and it gone.",,,,,,1,Light Up,LightUpInBag,,5,,,
 key,159,a ,,Tools,,10,,"Whenever there’s a door, I can open it.",You can across the door now.,,,,,,1,Open Door,OpenDoor,,5,,,
 headphones,139,a pair of ,,Tools,,10,,You get a headphone.,Playing music,You get a headphone.,,,,,1,Play music,PlayMusic,,5,,,
