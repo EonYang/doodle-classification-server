@@ -300,7 +300,7 @@ monkey,183,a ,,Terrestrial Animals,,40,,Class Default,What’s up dude.,,,,Say H
 sheep,254,a ,,Terrestrial Animals,,50,,Class Default,What’s up dude.,,,,Say Hi,SayHi,,,,,,,,
 panda,205,a ,,Terrestrial Animals,,100,,Class Default,What’s up dude.,,,,Say Hi,SayHi,,,,,,,,
 pig,219,a ,,Terrestrial Animals,,100,,Class Default,What’s up dude.,,,,Say Hi,SayHi,,,,,,,,
-camel,53,a ,,Terrestrial Animals,,110,,,"You're riding a camel! Moving speed increased by 50%, and you are able to ride it in the desert!",,,,Ride,Ride,,,,150,,,,
+camel,53,a ,,Terrestrial Animals,,110,,,"You're riding a camel! Moving speed increased by 50%, and you are able to ride it in the desert!",,,,Ride,Ride,,,,250,,,,
 cow,80,a ,,Terrestrial Animals,,150,,Mou~~,You're riding a cow! Moving speed increased by 20%.,,,,Ride,Ride,,,,120,,,,
 giraffe,128,a ,,Terrestrial Animals,,300,,,You're riding a giraffe! Moving speed increased by 50%.,,,,Ride,Ride,,,,150,,,,
 horse,146,a ,,Terrestrial Animals,,150,,,You're riding a horse! Moving speed increased by 150%.,,,,Ride,Ride,,,,250,,,,
