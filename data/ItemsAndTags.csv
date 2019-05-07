@@ -206,7 +206,7 @@ chandelier,68,a ,,Electrical,,20,,This thing needs electricity.,Light Up,,,,Ligh
 stereo,281,a ,,Electrical,,30,,,Use,,,,Use,Use,,,,,3,,,
 star,279,a ,,Environmental,,10,,"A star fragment, maybe it can make a good jewelry.",Added one star in the sky.,,ChangeEnvironment,1,,,,,,,,,,
 bush,47,a ,,Environmental,,30,,A beautiful bush grows on the ground.,ChangeEnvironment,,ChangeEnvironment,1,,,,,,,,,,
-cloud,73,a ,,Environmental,,30,,A small cloud is floating above you.,ChangeEnvironment,,ChangeEnvironment,1,,,,,,,,,,
+cloud,73,a ,,Environmental,,30,,A small cloud is floating above you.,ChangeEnvironment,,StartRaining,1,,,,,,,,,,
 fire hydrant,112,a ,,Environmental,,50,,"Installed a fire hydrant on the ground. Nice, the fire fighters might need this someday.",ChangeEnvironment,,ChangeEnvironment,1,,,,,,,,,,
 pond,225,a ,,Environmental,,30,,Wow!,"A pond, ok. Now let's install a diving board.",,CreateObstacle,1,,,,,,,,,,
 pool,226,a ,,Environmental,,30,,Wow!,"A pool, ok. Now let's install a diving board.",,CreateObstacle,1,,,,,,,,,,
