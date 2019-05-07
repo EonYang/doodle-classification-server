@@ -45,6 +45,7 @@ size = 64
 batchsize = 680
 
 def init():
+    print("init called")
     sess = tf.InteractiveSession()
     loaded_model = MobileNet(input_shape=(size, size, 1), alpha=1., weights=None, classes=NCATS)
     loaded_model.load_weights("./model/model.h5")

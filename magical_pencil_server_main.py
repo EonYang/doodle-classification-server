@@ -82,7 +82,8 @@ def getPuzzleDataAPI():
 @app.route("/api/doodlePredict", methods=["POST"])
 def predictAPI():
     global model, graph
-    print("this is the request: ", request.form.to_dict())
+    # print("get a is the request: ", request.form.to_dict())
+    print("get a predicting request: ")
     image_raw = request.form.to_dict()["data"]
     image_raw = stringToRGB(image_raw)
     image = prepareImage(image_raw)
@@ -101,6 +102,7 @@ def predictAPI():
 
 @app.route("/api/askForSprite", methods=["POST"])
 def processSprite():
+    start = dt.datetime.now()
     global model, graph
     image_raw = stringToRGB(request.form.to_dict()["data"])
     image = prepareImage(image_raw)
@@ -119,6 +121,8 @@ def processSprite():
     print("this is the fileName: ", fileName)
     cv2.imwrite(pathToSprites+ fileName, rgba)
     res['fileName'] = fileName
+    end = dt.datetime.now()
+    print('prepareda sprite\nTotal time {}s'.format((end - start).microseconds/1000000))
     return jsonify(res)
 
 @app.route("/api/downloadSprite", methods=["GET"])
