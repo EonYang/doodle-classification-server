@@ -136,10 +136,14 @@ def testServer():
 @app.route("/doodles", methods=["GET"])
 def sendGallery():
     doodlePath = "./doodleHistory"
+    if request.args.get('startAt') is None:
+        i = 0
+    else: i = request.values['startAt']
     image_names = [f for f in os.listdir(doodlePath) if not f.startswith('.')]
     os.chdir(doodlePath)
     image_names.sort(key=os.path.getmtime, reverse = True)
     os.chdir("..")
+    image_names = image_names[i: i+40]
     return render_template("doodles.html", image_names = image_names)
 
 @app.route('/upload/<filename>')
