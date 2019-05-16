@@ -201,7 +201,7 @@ floor lamp,119,a ,,Electrical,,150,,This thing needs electricity.,It’s brighte
 streetlight,287,a ,,Electrical,,200,,This thing needs electricity.,It’s brighter now.,,,,Light Up,LightUp,,,,,,,,
 telephone,300,a ,,Electrical,,20,,No carrier.,No carrier.,,,,Use,Use,,,,,3,,,
 computer,76,a ,,Electrical,,30,,No internet connection.,No internet connection.,,,,Use,Use,,,,,3,,,
-television,301,a ,,Electrical,,40,,"Do you have electricity? Anyway, there's no signal.",There's no signal.,,,,Use,Use,,,,,3,,,
+television,301,a ,,Electrical,,40,,"Do you have electricity? Anyway, there's no signal.",There's no signal.,,InitTV,1,,,,,,,3,,,
 chandelier,68,a ,,Electrical,,20,,This thing needs electricity.,Light Up,,,,Light Up,LightUp,,,,,,,,
 stereo,281,a ,,Electrical,,30,,,Use,,,,Use,Use,,,,,3,,,
 star,279,a ,,Environmental,,10,,"A star fragment, maybe it can make a good jewelry.",Added one star in the sky.,,ChangeEnvironment,1,,,,,,,,,,
