@@ -1,5 +1,7 @@
 import base64
 import io
+import os
+from datetime import date
 
 import cv2
 import numpy as np
@@ -9,11 +11,16 @@ from PIL import Image
 
 log = get_basic_logger(__name__, 'DEBUG')
 
+today = date.today()
+
 
 @timeit
 def save_image_history(image_raw, prediction: list):
+    dir_name = f'./doodle_history/{today.strftime("%b-%d-%Y")}/'
+    os.makedirs(dir_name, exist_ok=True)
     cv2.imwrite(
-        './doodle_history_2020/{}_{}.jpg'.format(
+        '{}{}_{}.jpg'.format(
+            dir_name,
             '_'.join(prediction),
             get_str_time_now()
         ),

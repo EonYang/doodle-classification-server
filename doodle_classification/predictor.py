@@ -1,9 +1,13 @@
 import json
+from threading import Thread
 
 import cv2
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+from doodle_classification.categories import categories
+from doodle_classification.image_utils import (prepareImage,
+                                               save_image_history, stringToRGB)
 from doodle_classification.logger import get_basic_logger
 from doodle_classification.time_utils import timeit
 from tensorflow.keras.applications import MobileNet
@@ -32,7 +36,7 @@ size = 64
 # batchsize = 680
 
 
-@timeit
+@ timeit
 def init():
     log.info('init called')
     sess = tf.InteractiveSession()
@@ -88,7 +92,7 @@ def perpareJSONDataAndPredict(model, jsonData, size=64):
         raise e
 
 
-@timeit
+@ timeit
 def prepareImageAndPredict(model, cv2ImageData, size=64):
     try:
         # downsize to 64
@@ -111,3 +115,29 @@ model, sess, graph = init()
 
 def get_all():
     return model, sess, graph
+
+
+@timeit
+def get_prediction_from_b64_string(image_str: str,):
+    image_raw = stringToRGB(image_str)
+    image = prepareImage(image_raw)
+    prediction = {
+        'numbers': [],
+        'names': []
+    }
+    with sess.as_default():
+        with graph.as_default():
+            prediction['numbers'] = prepareImageAndPredict(
+                model, image).tolist()
+    for i in range(len(prediction['numbers'])):
+        prediction['names'].append(
+            categories[prediction['numbers'][i]])
+
+    thread = Thread(target=save_image_history,
+                    kwargs={
+                        'image_raw': image,
+                        'prediction': prediction['names']
+                    }
+                    )
+    thread.start()
+    return prediction
