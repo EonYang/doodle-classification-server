@@ -6,6 +6,9 @@ services:
       context: .
       dockerfile: Dockerfile
     image: doodle-classification-server-dev:latest
+    environment:
+      LOG_LEVEL_OVERRIDE: "INFO"
+      PRODUCTION: "true"
 
     ports:
       - 5800:5800
