@@ -6,4 +6,19 @@ dkb:
 
 
 start:
-	python magical_pencil_server_main.py
+	python -m doodle_classification.server
+
+install:
+	@pip install -e .
+
+dev:
+	make install
+	@pip install -e '.[dev]'
+	@pre-commit install
+
+pre-commit:
+	pre-commit run --all-files
+
+
+test:
+	pytest tests

@@ -10,20 +10,42 @@ It runs a Keras model trained with Google Quick Draw dataset and ImageNet.
 
 The accuracy of the prediction is 0.89.
 
-run `doodlePrediction_Main.py` to create this server;
+## Run the server with docker
 
-APIs:
+Make sure you have installed docker. [ref](https://docs.docker.com/get-docker/)
 
+```bash
+docker-compose up
 ```
-/api/doodlePredict
+
+## Try to get a prediction
+
+*After starting the server*, visiting the sketch, click run and draw something:
+
+<https://editor.p5js.org/yangyang/sketches/DgHa-bMDT>
+
+## Develop the server on your machine
+
+### Install
+
+Before install, it's suggested to create a venv with your favorite tool
+
+```bash
+make install
 ```
+
+### Start the server
+
+```bash
+make start
+```
+
+## APIs
+
+### <span style="background-color:#49cc90; color:white">POST</span> `/api/predict`
 
 Post the Base64 encoded image to this API within the form[`data`]. The API will return the prediction in a JSON array.
 
-```
-/api/askForSprite
-```
+### Other
 
-Post the Base64 encoded image to this API within the form[`data`]. The API will return a link to the processed png image with the white margin around the contour removed.
-
-I designed other APIs only intended for my game. I'll skip introducing them.
+The other APIs are designed for my game, so I'll skip documenting them.
