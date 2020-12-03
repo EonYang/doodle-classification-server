@@ -1,7 +1,0 @@
-README.md
-setup.py
-doodle_classification.egg-info/PKG-INFO
-doodle_classification.egg-info/SOURCES.txt
-doodle_classification.egg-info/dependency_links.txt
-doodle_classification.egg-info/requires.txt
-doodle_classification.egg-info/top_level.txt

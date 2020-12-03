@@ -11,7 +11,7 @@ prediction_router = Blueprint(
     'prediction_router', __name__)
 
 
-@prediction_router.route('/api/doodlePredict', methods=['POST'])
+@prediction_router.route('/api/predict', methods=['POST'])
 @timeit
 def predictAPI():
     log.info('got a prediction request: ')
