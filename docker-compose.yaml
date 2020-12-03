@@ -1,0 +1,11 @@
+version: "3"
+services:
+  server:
+    container_name: DOODLE_CALSSIFY_SERVER
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: doodle-classification-server-dev:latest
+
+    ports:
+      - 5800:5800

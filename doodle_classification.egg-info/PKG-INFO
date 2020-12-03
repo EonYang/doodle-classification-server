@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: doodle-classification
+Version: 0.0.1
+Summary: Doodle Classification Server
+Home-page: UNKNOWN
+Author: Yang Yang
+Author-email: yy2473@nyu.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: test
