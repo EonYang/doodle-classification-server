@@ -3,5 +3,5 @@ flask-cors==3.0.8
 opencv-python==4.3.0.36
 Pillow==7.2.0
 pandas==0.25.0
-tensorflow==1.15.4
+tensorflow==2.14.0
 h5py==2.10.0
